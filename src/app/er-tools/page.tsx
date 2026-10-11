@@ -155,7 +155,12 @@ export default function ErToolsPage() {
       rating: 5,
       inStock: true,
       featured: true,
-      image: '/er-tools/er-spring-collet.jpg'
+      image: '/er-tools/er-spring-collet.jpg',
+      specs: [
+        { label: 'Specification', value: specs },
+        { label: 'Standard', value: 'DIN 6499B' },
+        { label: 'Runout', value: '< 0.005mm' }
+      ]
     });
   };
 
