@@ -1,0 +1,11 @@
+<svg viewBox="0 0 260 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="24,6 42,27 24,48 6,27" fill="#007CC2" />
+  <polygon points="24,13 35,27 24,41 13,27" fill="#ffffff" />
+  <circle cx="24" cy="27" r="4.5" fill="#007CC2" />
+  <text x="54" y="32" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" letter-spacing="1.5">
+    LEXUSTEC
+  </text>
+  <text x="55" y="46" fill="#007CC2" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="800" letter-spacing="3">
+    CUTTING TOOLS
+  </text>
+</svg>

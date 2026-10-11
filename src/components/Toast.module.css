@@ -1,0 +1,75 @@
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #0f192e;
+  border: 1px solid #f59e0b;
+  border-radius: 10px;
+  padding: 0.85rem 1.15rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.25);
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 420px;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.iconWrap {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.messageWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.message {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.viewQuoteLink {
+  background: transparent;
+  border: none;
+  color: #f59e0b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.viewQuoteLink:hover {
+  text-decoration: underline;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.closeBtn:hover {
+  color: #f8fafc;
+}
