@@ -79,3 +79,32 @@ a {
 .animate-carousel-progress {
   animation: carouselProgress 5000ms linear forwards;
 }
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: modalFadeIn 250ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-up {
+  animation: modalScaleUp 280ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
