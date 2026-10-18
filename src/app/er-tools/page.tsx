@@ -246,8 +246,8 @@ export default function ErToolsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
               {/* Card 1: ER Spring Collets */}
-              <div className="bg-white rounded-3xl border-2 border-[#bde2f5] hover:border-[#007CC2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
-                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-[#bde2f5]/60 overflow-hidden">
+              <div className="bg-white rounded-3xl border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-slate-100 overflow-hidden">
                   <Image
                     src="/er-tools/er-spring-collet.jpg"
                     alt="Precision ER Spring Collet DIN 6499"
@@ -312,8 +312,8 @@ export default function ErToolsPage() {
               </div>
 
               {/* Card 2: ER Clamping Nuts */}
-              <div className="bg-white rounded-3xl border-2 border-[#bde2f5] hover:border-[#007CC2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
-                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-[#bde2f5]/60 overflow-hidden">
+              <div className="bg-white rounded-3xl border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-slate-100 overflow-hidden">
                   <Image
                     src="/er-tools/er-clamping-nut.jpg"
                     alt="Precision Balanced ER Clamping Nut"
@@ -378,8 +378,8 @@ export default function ErToolsPage() {
               </div>
 
               {/* Card 3: BT40 / HSK Spindle Collet Chucks */}
-              <div className="bg-white rounded-3xl border-2 border-[#bde2f5] hover:border-[#007CC2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
-                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-[#bde2f5]/60 overflow-hidden">
+              <div className="bg-white rounded-3xl border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-slate-100 overflow-hidden">
                   <Image
                     src="/er-tools/er-collet-chuck.jpg"
                     alt="BT40 ER Collet Chuck Tool Holder"
@@ -444,8 +444,8 @@ export default function ErToolsPage() {
               </div>
 
               {/* Card 4: Master ER Collet Box Sets */}
-              <div className="bg-white rounded-3xl border-2 border-[#bde2f5] hover:border-[#007CC2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
-                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-[#bde2f5]/60 overflow-hidden">
+              <div className="bg-white rounded-3xl border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-slate-100 overflow-hidden">
                   <Image
                     src="/er-tools/er-collet-set.jpg"
                     alt="Master ER Collet Box Set with Wrench"
@@ -551,7 +551,7 @@ export default function ErToolsPage() {
                 {filteredSeries.map((item) => (
                   <div
                     key={item.series}
-                    className="p-6 sm:p-7 rounded-3xl bg-white border-2 border-[#bde2f5] hover:border-[#007CC2] shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-left group"
+                    className="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 hover:border-slate-300 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-left group"
                   >
                     <div>
                       {/* Big Text Header */}

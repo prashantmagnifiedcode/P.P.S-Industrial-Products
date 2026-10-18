@@ -268,7 +268,7 @@ export default function ExpoPage() {
               {OFFICIAL_EXPO_AWARDS.map((award, index) => (
                 <div
                   key={award.id}
-                  className="bg-white rounded-3xl border-2 border-[#bde2f5] hover:border-[#007CC2] shadow-lg shadow-[#007CC2]/5 overflow-hidden transition-all duration-300 hover:shadow-2xl"
+                  className="bg-white rounded-3xl border border-slate-200 hover:border-slate-300 shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                     
