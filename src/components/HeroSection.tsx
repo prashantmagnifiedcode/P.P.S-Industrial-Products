@@ -110,7 +110,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative w-full h-[300px] sm:h-[350px] lg:h-[390px] bg-slate-950 overflow-hidden flex items-end select-none"
+      className="relative w-full h-[450px] xs:h-[470px] sm:h-[350px] lg:h-[390px] bg-slate-950 overflow-hidden flex flex-col justify-end select-none"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
@@ -124,7 +124,7 @@ export default function HeroSection() {
         return (
           <div
             key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+            className={`absolute inset-x-0 top-0 h-[240px] xs:h-[260px] sm:h-full sm:inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
               }`}
           >
             {/* Background Image with Slow Subtle Ken Burns Zoom */}
@@ -140,36 +140,36 @@ export default function HeroSection() {
               />
             </div>
 
-            {/* Subtle Vignette Overlay - Keeps Image 85%+ Visible */}
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/60 via-transparent to-transparent" />
+            {/* Subtle Vignette Overlay - Keeps Image Highly Visible while smoothly dissolving at bottom on mobile */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/25 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/60 via-transparent to-transparent hidden sm:block" />
           </div>
         );
       })}
 
-      {/* 2. Minimalist, Ultra-Compact Text Overlay */}
+      {/* 2. Minimalist Text Overlay - Sits comfortably below the photo on mobile, overlaid on desktop */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 sm:pb-12">
-        <div className="max-w-md backdrop-blur-md bg-slate-950/50 p-4 sm:p-5 rounded-2xl border border-white/15 shadow-xl space-y-2 text-left">
+        <div className="max-w-md backdrop-blur-md bg-slate-900/90 sm:bg-slate-950/50 p-3.5 sm:p-5 rounded-2xl border border-white/10 sm:border-white/15 shadow-2xl space-y-2 text-left">
 
           {/* Compact Punchy Headline */}
-          <h1 className="text-lg sm:text-2xl font-black text-white tracking-tight leading-snug">
+          <h1 className="text-base sm:text-2xl font-black text-white tracking-tight leading-snug">
             {SLIDES[currentSlide].title}{' '}
             <span className="bg-gradient-to-r from-[#007CC2] via-[#38bdf8] to-sky-200 bg-clip-text text-transparent">
               {SLIDES[currentSlide].titleHighlight}
             </span>
           </h1>
 
-          {/* 1-Line Description */}
-          <p className="text-slate-300 text-[11px] sm:text-xs leading-relaxed font-medium line-clamp-1">
+          {/* Description */}
+          <p className="text-slate-300 text-[11px] sm:text-xs leading-relaxed font-medium line-clamp-2 sm:line-clamp-1">
             {SLIDES[currentSlide].subtitle}
           </p>
 
           {/* Compact Action Buttons */}
-          <div className="flex items-center gap-2.5 pt-0.5">
+          <div className="flex items-center gap-2 sm:gap-2.5 pt-0.5">
             <button
               type="button"
               onClick={() => openRfqModal()}
-              className="relative overflow-hidden group px-4 py-2 rounded-lg bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs tracking-wide shadow-sm shadow-[#007CC2]/30 active:scale-95 transition-all flex items-center gap-1.5"
+              className="relative overflow-hidden group px-3.5 sm:px-4 py-2 rounded-lg bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs tracking-wide shadow-sm shadow-[#007CC2]/30 active:scale-95 transition-all flex items-center gap-1.5"
             >
               <Sparkles size={13} className="fill-current text-white" />
               <span>{SLIDES[currentSlide].ctaText}</span>
@@ -180,7 +180,7 @@ export default function HeroSection() {
               href="https://wa.me/919350509134?text=Hi%20P.P.S%20Industrial%2C%20I%20am%20interested%20in%20pricing%20for%20cutting%20tools."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3.5 py-2 rounded-lg bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold text-xs transition-all flex items-center gap-1.5"
+              className="px-3 sm:px-3.5 py-2 rounded-lg bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold text-xs transition-all flex items-center gap-1.5"
             >
               <span className="text-xs">💬</span>
               <span>WhatsApp</span>
@@ -197,11 +197,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* 3. Subtle Left / Right Navigation Arrows */}
+      {/* 3. Navigation Arrows - Centered on the image photo on mobile, vertically centered on desktop */}
       <button
         type="button"
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/40 hover:bg-[#007CC2] border border-white/20 text-white backdrop-blur-md transition-all shadow-md active:scale-90"
+        className="absolute left-2 sm:left-4 top-[120px] xs:top-[130px] sm:top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-[#007CC2] border border-white/20 text-white backdrop-blur-md transition-all shadow-md active:scale-90"
         aria-label="Previous Slide"
       >
         <ChevronLeft size={18} className="stroke-[2.5]" />
@@ -210,7 +210,7 @@ export default function HeroSection() {
       <button
         type="button"
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/40 hover:bg-[#007CC2] border border-white/20 text-white backdrop-blur-md transition-all shadow-md active:scale-90"
+        className="absolute right-2 sm:right-4 top-[120px] xs:top-[130px] sm:top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-[#007CC2] border border-white/20 text-white backdrop-blur-md transition-all shadow-md active:scale-90"
         aria-label="Next Slide"
       >
         <ChevronRight size={18} className="stroke-[2.5]" />

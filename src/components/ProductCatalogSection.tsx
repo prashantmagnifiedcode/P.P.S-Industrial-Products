@@ -156,7 +156,7 @@ export default function ProductCatalogSection() {
               href="https://www.indiamart.com/pps-industrialproducts/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 rounded-2xl bg-white hover:bg-[#f0f8fc] border-2 border-[#bde2f5] hover:border-[#007CC2] text-slate-800 shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-3.5 group"
+              className="px-5 py-3 rounded-2xl bg-white hover:bg-slate-50 border border-slate-200 hover:border-slate-300 text-slate-800 shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center gap-3.5 group"
               title="Available on IndiaMART - P.P.S Industrial Products"
             >
               <div className="h-10 w-14 bg-white rounded-xl border border-slate-100 flex items-center justify-center p-1 shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
@@ -383,58 +383,58 @@ export default function ProductCatalogSection() {
               </div>
             </div>
 
-            {/* Photo-Centric Carousel Grid: 3 Hero Photos on Desktop, 2 on Tablet, 1 on Mobile */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Photo-Centric Carousel Grid: 3 Hero Photos on Desktop, 2 on Mobile/Tablet */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
               {[0, 1, 2].map((offset) => {
                 const item = CP_GRATEX_CAROUSEL_ITEMS[(carouselIdx + offset) % CP_GRATEX_CAROUSEL_ITEMS.length];
-                const isHiddenOnSmall = offset === 2 ? 'hidden lg:flex' : offset === 1 ? 'hidden sm:flex' : 'flex';
+                const isHiddenOnSmall = offset === 2 ? 'hidden lg:flex' : 'flex';
 
                 return (
                   <div
                     key={`${item.id}-${offset}`}
-                    className={`${isHiddenOnSmall} flex-col bg-white rounded-2xl border border-[#bde2f5] hover:border-[#007CC2] hover:shadow-lg transition-all duration-300 overflow-hidden group`}
+                    className={`${isHiddenOnSmall} flex-col bg-white rounded-xl sm:rounded-2xl border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 overflow-hidden group`}
                   >
                     {/* Large Prominent Photo Stage (Photo is the Hero) */}
-                    <div className="relative aspect-[16/10] bg-white overflow-hidden p-3 flex items-center justify-center border-b border-[#bde2f5]/70 group-hover:bg-[#f0f8fc]/40 transition-colors">
+                    <div className="relative aspect-[16/10] bg-white overflow-hidden p-2 sm:p-3 flex items-center justify-center border-b border-slate-100 group-hover:bg-slate-50/50 transition-colors">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
                         unoptimized
-                        className="object-contain p-2.5 group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain p-1.5 sm:p-2.5 group-hover:scale-105 transition-transform duration-500"
                       />
 
                       {/* Floating Part & Feature Pills in Brand Colors */}
-                      <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between pointer-events-none">
-                        <span className="font-mono text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-[#007CC2] text-white shadow-xs">
+                      <div className="absolute top-2 left-2 right-2 flex items-center justify-between pointer-events-none gap-1">
+                        <span className="font-mono text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2.5 py-0.5 rounded-full bg-[#007CC2] text-white shadow-xs truncate">
                           {item.partNo}
                         </span>
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#f0f8fc] text-[#007CC2] border border-[#bde2f5] shadow-2xs">
+                        <span className="hidden xs:inline-block text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full bg-[#f0f8fc] text-[#007CC2] border border-[#bde2f5] shadow-2xs truncate">
                           {item.badge}
                         </span>
                       </div>
                     </div>
 
                     {/* Photo Description & Details */}
-                    <div className="p-4 flex-1 flex flex-col justify-between space-y-2.5">
+                    <div className="p-2.5 sm:p-4 flex-1 flex flex-col justify-between space-y-1.5 sm:space-y-2.5">
                       <div>
-                        <h5 className="font-extrabold text-sm sm:text-base text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug line-clamp-1">
+                        <h5 className="font-extrabold text-xs sm:text-base text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug line-clamp-1">
                           {item.title}
                         </h5>
-                        <p className="text-xs text-slate-600 leading-relaxed mt-1 font-normal line-clamp-2">
+                        <p className="hidden sm:block text-xs text-slate-600 leading-relaxed mt-1 font-normal line-clamp-2">
                           {item.description}
                         </p>
                       </div>
 
-                      <div className="flex items-center justify-between gap-1 pt-2.5 border-t border-slate-100">
-                        <span className="text-[10px] font-semibold text-[#007CC2] bg-[#f0f8fc] border border-[#bde2f5] px-2 py-0.5 rounded-md truncate">
+                      <div className="flex items-center justify-between gap-1 pt-1.5 sm:pt-2.5 border-t border-slate-100">
+                        <span className="hidden sm:inline-block text-[10px] font-semibold text-[#007CC2] bg-[#f0f8fc] border border-[#bde2f5] px-2 py-0.5 rounded-md truncate">
                           {item.target}
                         </span>
                         <a
                           href="https://deburringtools.com/shop/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[11px] text-[#007CC2] hover:text-[#005688] font-bold flex items-center gap-0.5 shrink-0 hover:underline"
+                          className="text-[10px] sm:text-[11px] text-[#007CC2] hover:text-[#005688] font-bold flex items-center gap-0.5 shrink-0 hover:underline"
                         >
                           <span>deburringtools.com</span>
                           <ExternalLink size={10} />

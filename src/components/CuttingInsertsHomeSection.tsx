@@ -43,41 +43,41 @@ export default function CuttingInsertsHomeSection() {
         </div>
 
         {/* 2. Featured Inserts Showcase (Real Photos from Lexustec / PPS) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mb-12">
           {featuredInserts.map((insert) => (
             <Link
               key={insert.id}
               href={`/inserts?category=${insert.category}`}
-              className="bg-white rounded-3xl border-2 border-[#bde2f5]/90 hover:border-[#007CC2] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer"
+              className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer"
             >
               {/* Top Photo Stage with Image Hero */}
-              <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 flex items-center justify-center border-b border-[#bde2f5]/60 overflow-hidden">
+              <div className="relative aspect-square sm:aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-2 sm:p-4 flex items-center justify-center border-b border-slate-100 overflow-hidden">
                 <Image
                   src={insert.image}
                   alt={insert.name}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-contain p-4 group-hover:scale-108 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-contain p-2 sm:p-4 group-hover:scale-108 transition-transform duration-500 ease-out"
                 />
 
                 {/* Floating Shape & Category Pill */}
-                <div className="absolute top-3 left-3 flex items-center gap-1.5 pointer-events-none">
-                  <span className="font-sans text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-[#007CC2] text-white shadow-xs tracking-tight">
+                <div className="absolute top-2 sm:top-3 left-2 sm:left-3 flex items-center gap-1 pointer-events-none">
+                  <span className="font-sans text-[10px] sm:text-xs font-extrabold px-1.5 sm:px-2.5 py-0.5 rounded-full bg-[#007CC2] text-white shadow-xs tracking-tight">
                     {insert.orderCode}
                   </span>
-                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-white/90 text-slate-700 border border-slate-200 shadow-2xs backdrop-blur-xs">
+                  <span className="hidden sm:inline-block text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-white/90 text-slate-700 border border-slate-200 shadow-2xs backdrop-blur-xs">
                     {insert.categoryLabel}
                   </span>
                 </div>
 
                 {/* ISO Badges in Top Right */}
-                <div className="absolute top-3 right-3 flex items-center gap-1 pointer-events-none">
+                <div className="absolute top-2 sm:top-3 right-2 sm:right-3 flex items-center gap-0.5 sm:gap-1 pointer-events-none">
                   {insert.isoMaterials.map(matCode => {
                     const mat = ISO_MATERIALS_MAP[matCode];
                     return (
                       <span
                         key={matCode}
-                        className={`w-5 h-5 rounded-md flex items-center justify-center font-bold text-xs shadow-xs ${mat.badgeBg} ${mat.badgeText}`}
+                        className={`w-4 h-4 sm:w-5 sm:h-5 rounded sm:rounded-md flex items-center justify-center font-bold text-[9px] sm:text-xs shadow-xs ${mat.badgeBg} ${mat.badgeText}`}
                         title={`${mat.code} - ${mat.name}`}
                       >
                         {mat.code}
@@ -89,18 +89,18 @@ export default function CuttingInsertsHomeSection() {
               </div>
 
               {/* Middle: Details & Technical Highlights */}
-              <div className="p-5 flex-1 flex flex-col justify-center">
-                <div className="space-y-1.5">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-xs font-bold text-[#007CC2] uppercase tracking-wider">
-                      {insert.categoryLabel} Operation
+              <div className="p-3 sm:p-5 flex-1 flex flex-col justify-center">
+                <div className="space-y-1 sm:space-y-1.5">
+                  <div className="flex items-center justify-between gap-1 sm:gap-2">
+                    <span className="text-[10px] sm:text-xs font-bold text-[#007CC2] uppercase tracking-wider truncate">
+                      {insert.categoryLabel}
                     </span>
-                    <span className="text-xs font-semibold text-slate-400">
+                    <span className="hidden sm:inline-block text-xs font-semibold text-slate-400">
                       Grade: {insert.grade}
                     </span>
                   </div>
 
-                  <h3 className="font-black text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug">
+                  <h3 className="font-black text-xs sm:text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug line-clamp-2">
                     {insert.description}
                   </h3>
                 </div>
