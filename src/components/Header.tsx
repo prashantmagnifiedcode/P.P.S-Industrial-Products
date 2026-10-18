@@ -56,11 +56,11 @@ const BRAND_PRODUCTS: BrandProductNavItem[] = [
     href: '#lexustec',
     logo: (
       <Image
-        src="/lexustec-dark-logo.png"
+        src="/lexustec-logo.png"
         alt="Lexustec Cutting Tools"
         width={90}
         height={22}
-        className="h-4.5 w-auto object-contain max-w-[90px]"
+        className="h-4.5 w-auto object-contain rounded-2xs max-w-[90px]"
       />
     ),
   },
