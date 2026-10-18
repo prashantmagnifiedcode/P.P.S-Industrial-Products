@@ -17,7 +17,7 @@ export default function CuttingInsertsHomeSection() {
   ).filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-b border-[#bde2f5]/80 relative overflow-hidden" id="cutting-inserts">
+    <section className="py-16 sm:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-b border-slate-200 relative overflow-hidden" id="cutting-inserts">
 
       {/* Precision Blueprint Grid Watermark */}
       <div className="absolute inset-0 bg-[radial-gradient(#007CC20a_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
@@ -26,13 +26,8 @@ export default function CuttingInsertsHomeSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        {/* 1. Header with Trust Badge & Headline */}
+        {/* 1. Header & Headline */}
         <div className="space-y-3 max-w-3xl text-left mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f0f8fc] border border-[#bde2f5] text-[#007CC2] text-xs font-bold uppercase tracking-wider shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-[#007CC2] animate-pulse" />
-            <span>ISO Certified Cutting Insert Inventory • Gurugram Depot</span>
-          </div>
-
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
             Carbide &amp; Ceramic <span className="bg-gradient-to-r from-[#007CC2] via-[#006aa6] to-[#004f7c] bg-clip-text text-transparent">Cutting Inserts</span>
           </h2>

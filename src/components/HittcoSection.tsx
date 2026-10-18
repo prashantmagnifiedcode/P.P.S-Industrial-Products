@@ -75,8 +75,8 @@ export default function HittcoSection() {
   return (
     <section className="w-full bg-white border-b border-slate-200 pb-16 sm:pb-20" id="hittco">
       
-      {/* Clean Deep Black Stage - No black border line */}
-      <div className="relative w-full h-auto min-h-[440px] sm:min-h-0 sm:h-[450px] lg:h-[480px] bg-black overflow-hidden flex flex-col justify-center py-10 sm:py-0">
+      {/* Signature Primary Brand Blue Stage */}
+      <div className="relative w-full h-auto min-h-[440px] sm:min-h-0 sm:h-[450px] lg:h-[480px] bg-[#007CC2] overflow-hidden flex flex-col justify-center py-10 sm:py-0">
         
         {/* Crisp Background Metallic Tool Stage Image */}
         <div className="absolute inset-0 z-0">
@@ -85,13 +85,13 @@ export default function HittcoSection() {
             alt="Hittco Tools Solid Carbide & HSS Cutting Tools"
             fill
             sizes="100vw"
-            className="object-cover object-center opacity-30 mix-blend-luminosity"
+            className="object-cover object-center opacity-25 mix-blend-overlay"
             priority
           />
-          {/* Deep Clean Black Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-[#080d16] to-black" />
-          {/* Ambient High-Tech Cyan Glow focused behind Hittco Emblem */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,_rgba(0,124,194,0.28),_rgba(0,0,0,0)_70%)]" />
+          {/* Deep Primary Blue Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#005e94] via-[#007CC2] to-[#005282] opacity-90" />
+          {/* Ambient High-Tech White/Cyan Glow focused behind Hittco Emblem */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,_rgba(255,255,255,0.22),_rgba(0,0,0,0)_70%)]" />
         </div>
 
         {/* Brand Banner Content & Official Logo */}
@@ -107,22 +107,22 @@ export default function HittcoSection() {
               title="Visit Hittco Tools Ltd (hittco.com)"
             >
               <Image
-                src="/hittco-logo.png"
+                src="/hittco-logo-white.png"
                 alt="Hittco Tools Ltd Official Logo (hittco.com)"
                 width={300}
                 height={100}
                 priority
-                className="h-10 sm:h-16 w-auto object-contain drop-shadow-[0_4px_25px_rgba(0,124,194,0.5)]"
+                className="h-10 sm:h-16 w-auto object-contain drop-shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
               />
             </a>
           </div>
 
           <div className="space-y-2">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight uppercase">
-              PRECISION <span className="bg-gradient-to-r from-[#38bdf8] via-[#00a3ff] to-[#60a5fa] bg-clip-text text-transparent">HSS &amp; CARBIDE TOOLS</span>
+              PRECISION <span className="text-[#dbeafe] drop-shadow-xs">HSS &amp; CARBIDE TOOLS</span>
             </h3>
 
-            <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-white/90 max-w-2xl mx-auto font-normal leading-relaxed">
               Authorized direct distributor &amp; stockist for <strong className="text-white font-semibold">Hittco Tools Ltd</strong> — premium Indian manufacturer since 1974 delivering solid carbide end mills, coolant drills, precision reamers, and HSS-Co tooling.
             </p>
           </div>
@@ -133,17 +133,17 @@ export default function HittcoSection() {
               href="https://hittco.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/20 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
+              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/25 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
             >
               <span>Visit hittco.com</span>
-              <ExternalLink size={13} className="text-[#38bdf8]" />
+              <ExternalLink size={13} className="text-white" />
             </a>
 
             <a
               href="https://www.indiamart.com/pps-industrialproducts/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/20 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
+              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/25 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
             >
               <div className="bg-white rounded-md px-1.5 py-0.5 flex items-center justify-center">
                 <Image
@@ -161,7 +161,7 @@ export default function HittcoSection() {
               href="https://wa.me/919350509134?text=Hi%20P.P.S%20Industrial%2C%20I%20would%20like%20to%20inquire%20about%20Hittco%20cutting%20tools."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-5 py-2.5 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-lg shadow-[#007CC2]/40 transition-all active:scale-95"
+              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white text-[#007CC2] hover:bg-slate-100 font-extrabold text-xs sm:text-sm inline-flex items-center gap-2 shadow-lg shadow-black/20 hover:scale-105 active:scale-95 transition-all"
             >
               <MessageCircle size={15} className="fill-current" />
               <span>WhatsApp Tooling Desk</span>

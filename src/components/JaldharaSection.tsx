@@ -75,8 +75,8 @@ export default function JaldharaSection() {
   return (
     <section className="w-full bg-white border-b border-slate-200 pb-16 sm:pb-20" id="blades">
       
-      {/* Clean Deep Black Stage - No black border line */}
-      <div className="relative w-full h-auto min-h-[440px] sm:min-h-0 sm:h-[450px] lg:h-[480px] bg-black overflow-hidden flex flex-col justify-center py-10 sm:py-0">
+      {/* Signature Primary Brand Blue Stage */}
+      <div className="relative w-full h-auto min-h-[440px] sm:min-h-0 sm:h-[450px] lg:h-[480px] bg-[#007CC2] overflow-hidden flex flex-col justify-center py-10 sm:py-0">
         
         {/* Crisp Background Metallic Industrial Blade Banner */}
         <div className="absolute inset-0 z-0">
@@ -85,13 +85,13 @@ export default function JaldharaSection() {
             alt="Jaldhara Industrial Machine Blades & Cutters"
             fill
             sizes="100vw"
-            className="object-cover object-center opacity-30 mix-blend-luminosity"
+            className="object-cover object-center opacity-25 mix-blend-overlay"
             priority
           />
-          {/* Deep Clean Black Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-[#080d16] to-black" />
-          {/* Ambient High-Tech Cyan Glow focused behind Jaldhara Emblem */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,_rgba(0,124,194,0.28),_rgba(0,0,0,0)_70%)]" />
+          {/* Deep Primary Blue Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#005e94] via-[#007CC2] to-[#005282] opacity-90" />
+          {/* Ambient High-Tech White/Cyan Glow focused behind Jaldhara Emblem */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,_rgba(255,255,255,0.22),_rgba(0,0,0,0)_70%)]" />
         </div>
 
         {/* Brand Banner Content & Official Logo */}
@@ -103,22 +103,22 @@ export default function JaldharaSection() {
               href="https://www.jaldharatools.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 text-white hover:text-[#38bdf8] transition-all hover:scale-105 duration-300 group py-1"
+              className="inline-flex items-center gap-2.5 text-white hover:text-white/80 transition-all hover:scale-105 duration-300 group py-1"
               title="Visit JALDHARA SMALL TOOLS PVT. LTD. (www.jaldharatools.com)"
             >
-              <span className="text-xl sm:text-2xl lg:text-3xl font-black tracking-wider drop-shadow-[0_4px_25px_rgba(0,124,194,0.5)]">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-black tracking-wider drop-shadow-[0_4px_25px_rgba(0,0,0,0.35)]">
                 JALDHARA SMALL TOOLS PVT. LTD.
               </span>
-              <ExternalLink size={20} className="text-[#38bdf8] shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <ExternalLink size={20} className="text-white shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>
 
           <div className="space-y-2">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight uppercase">
-              WE SELL <span className="bg-gradient-to-r from-[#38bdf8] via-[#00a3ff] to-[#60a5fa] bg-clip-text text-transparent">BLADES</span>
+              WE SELL <span className="text-[#dbeafe] drop-shadow-xs">BLADES</span>
             </h3>
 
-            <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-white/90 max-w-2xl mx-auto font-normal leading-relaxed">
               Authorized distributor &amp; direct stockist for <strong className="text-white font-semibold">Jaldhara Small Tools</strong> — industrial machine shear blades, circular slitter knives, bandsaw cutters, and precision broaching tools.
             </p>
           </div>
@@ -129,17 +129,17 @@ export default function JaldharaSection() {
               href="https://www.jaldharatools.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/20 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
+              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/25 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
             >
               <span>Visit jaldharatools.com</span>
-              <ExternalLink size={13} className="text-[#38bdf8]" />
+              <ExternalLink size={13} className="text-white" />
             </a>
 
             <a
               href="https://www.indiamart.com/pps-industrialproducts/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/20 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
+              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-md border border-white/25 hover:border-white/40 backdrop-blur-md transition-all active:scale-95"
             >
               <div className="bg-white rounded-md px-1.5 py-0.5 flex items-center justify-center">
                 <Image
@@ -157,7 +157,7 @@ export default function JaldharaSection() {
               href="https://wa.me/919350509134?text=Hi%20P.P.S%20Industrial%2C%20I%20would%20like%20to%20inquire%20about%20Jaldhara%20industrial%20blades%20and%20cutters."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 sm:px-5 py-2.5 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-lg shadow-[#007CC2]/40 transition-all active:scale-95"
+              className="px-4 sm:px-5 py-2.5 rounded-xl bg-white text-[#007CC2] hover:bg-slate-100 font-extrabold text-xs sm:text-sm inline-flex items-center gap-2 shadow-lg shadow-black/20 hover:scale-105 active:scale-95 transition-all"
             >
               <MessageCircle size={15} className="fill-current" />
               <span>WhatsApp Blade Desk</span>
