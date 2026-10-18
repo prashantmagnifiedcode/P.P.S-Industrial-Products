@@ -7,6 +7,9 @@ import { ExternalLink, MessageCircle } from 'lucide-react';
 interface PferdProduct {
   id: string;
   name: string;
+  category: string;
+  badge: string;
+  spec: string;
   image: string;
   whatsappMessage: string;
 }
@@ -15,36 +18,54 @@ const PFERD_PRODUCTS: PferdProduct[] = [
   {
     id: 'PFERD-TC-BURR-RBF',
     name: 'Tungsten Carbide Burrs (STEEL Cut Tree Shape RBF)',
+    category: 'Rotary Burrs',
+    badge: 'STEEL Cut',
+    spec: 'DIN 8032/33',
     image: '/pferd/pferd-burrs.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for PFERD Tungsten Carbide Burrs (STEEL Cut).'
   },
   {
     id: 'PFERD-CUTOFF-SG-STEELOX',
     name: 'EHT SG STEELOX High-Performance Cut-Off Wheels',
+    category: 'Cutting Wheels',
+    badge: 'STEELOX',
+    spec: 'EN 12413',
     image: '/pferd/pferd-cutoff.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for PFERD EHT SG STEELOX Cut-Off Wheels.'
   },
   {
     id: 'PFERD-MOUNTED-POINTS-INOX',
     name: 'Vitrified Cylindrical Mounted Grinding Points (INOX)',
+    category: 'Mounted Points',
+    badge: 'INOX Finish',
+    spec: 'Hardness O',
     image: '/pferd/pferd-mounted-points.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for PFERD Cylindrical Mounted Points INOX.'
   },
   {
     id: 'PFERD-FLAP-WHEELS',
     name: 'Mounted Flap Wheels for Finishing & Contouring',
+    category: 'Abrasives',
+    badge: 'Finishing',
+    spec: 'Corundum A',
     image: '/pferd/pferd-flap-wheel.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for PFERD Mounted Flap Wheels.'
   },
   {
     id: 'PFERD-CUP-BRUSH-COMBITWIST',
     name: 'COMBITWIST® Knotted Industrial Cup Brushes',
+    category: 'Wire Brushes',
+    badge: 'COMBITWIST®',
+    spec: 'Knotted Steel',
     image: '/pferd/pferd-cup-brush.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for PFERD COMBITWIST Knotted Cup Brushes.'
   },
   {
     id: 'PFERD-DIAMOND-NEEDLE-FILES',
     name: 'Precision Diamond Needle File Set (DF 4211)',
+    category: 'Diamond Files',
+    badge: 'DF 4211 Set',
+    spec: 'Grain D 126',
     image: '/pferd/pferd-diamond-files.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for PFERD Diamond Needle File Set DF 4211.'
   }
@@ -54,8 +75,8 @@ export default function PferdSection() {
   return (
     <section className="w-full bg-white border-b border-slate-200 pb-16 sm:pb-20" id="pferd">
       
-      {/* Clean Deep Black Stage */}
-      <div className="relative w-full h-auto min-h-[440px] sm:min-h-0 sm:h-[450px] lg:h-[480px] bg-black overflow-hidden border-y border-slate-900 flex flex-col justify-center py-10 sm:py-0">
+      {/* Clean Deep Black Stage - No black border line */}
+      <div className="relative w-full h-auto min-h-[440px] sm:min-h-0 sm:h-[450px] lg:h-[480px] bg-black overflow-hidden flex flex-col justify-center py-10 sm:py-0">
         
         {/* Crisp Background Metallic Tool Stage Image */}
         <div className="absolute inset-0 z-0">
@@ -152,7 +173,7 @@ export default function PferdSection() {
         <div className="absolute inset-x-0 bottom-0 h-16 sm:h-44 bg-gradient-to-t from-white via-white/50 to-transparent pointer-events-none" />
       </div>
 
-      {/* 3. Overlapping PFERD Product Cards: Contains Image, on Hover Shows Just Name */}
+      {/* 3. PFERD Product Cards: Styled matching Carbide & Ceramic Cutting Inserts */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:-mt-20 lg:-mt-24 relative z-20">
         
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
@@ -162,30 +183,57 @@ export default function PferdSection() {
               href={`https://wa.me/919350509134?text=${encodeURIComponent(prod.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 group h-44 xs:h-52 sm:h-72 lg:h-80 flex items-center justify-center p-3 sm:p-8 cursor-pointer active:scale-[0.98]"
+              className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer"
               title={`Inquire about ${prod.name}`}
             >
-              {/* Product Image Stage */}
-              <div className="relative w-full h-full flex items-center justify-center">
+              {/* Top Photo Stage with Image Hero */}
+              <div className="relative aspect-square sm:aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-slate-100 p-2 sm:p-4 flex items-center justify-center border-b border-slate-100 overflow-hidden">
                 <Image
                   src={prod.image}
                   alt={prod.name}
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-contain p-1 sm:p-2 group-hover:scale-110 transition-transform duration-500 ease-out"
+                  className="object-contain p-2 sm:p-4 group-hover:scale-108 transition-transform duration-500 ease-out"
                 />
+
+                {/* Floating Shape & Category Pill */}
+                <div className="absolute top-2 sm:top-3 left-2 sm:left-3 flex items-center gap-1 pointer-events-none">
+                  <span className="font-sans text-[10px] sm:text-xs font-extrabold px-1.5 sm:px-2.5 py-0.5 rounded-full bg-[#007CC2] text-white shadow-xs tracking-tight">
+                    {prod.badge}
+                  </span>
+                  <span className="hidden sm:inline-block text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-white/90 text-slate-700 border border-slate-200 shadow-2xs backdrop-blur-xs">
+                    {prod.category}
+                  </span>
+                </div>
               </div>
 
-              {/* On Hover: Smooth Brand Blue Overlay Showing JUST the Name of Product */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#007CC2]/95 via-[#007CC2]/85 to-[#007CC2]/40 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-3 sm:p-6 text-center backdrop-blur-2xs">
-                <h4 className="text-xs sm:text-lg lg:text-xl font-bold sm:font-black text-white leading-snug tracking-tight drop-shadow-sm transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 line-clamp-2">
-                  {prod.name}
-                </h4>
-                
-                <span className="mt-1.5 sm:mt-3 inline-flex items-center gap-1 sm:gap-1.5 px-2 py-0.5 sm:px-3.5 sm:py-1 rounded-full bg-white text-[#007CC2] font-bold text-[10px] sm:text-xs shadow-xs transform translate-y-3 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                  <MessageCircle size={12} className="fill-current" />
-                  <span>Inquire on WhatsApp</span>
-                </span>
+              {/* Middle: Details & Technical Highlights */}
+              <div className="p-3 sm:p-5 flex-1 flex flex-col justify-between space-y-2">
+                <div className="space-y-1 sm:space-y-1.5">
+                  <div className="flex items-center justify-between gap-1 sm:gap-2">
+                    <span className="text-[10px] sm:text-xs font-bold text-[#007CC2] uppercase tracking-wider truncate">
+                      {prod.category}
+                    </span>
+                    <span className="hidden sm:inline-block text-xs font-semibold text-slate-400">
+                      {prod.spec}
+                    </span>
+                  </div>
+
+                  <h3 className="font-black text-xs sm:text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug line-clamp-2">
+                    {prod.name}
+                  </h3>
+                </div>
+
+                {/* Direct WhatsApp Action Button in Professional Slate/Gray */}
+                <div className="pt-2 border-t border-slate-100 flex items-center justify-between gap-2">
+                  <span className="text-[11px] font-bold text-slate-500 hidden sm:inline-flex items-center gap-1">
+                    PFERD Germany
+                  </span>
+                  <span className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200/80 group-hover:bg-slate-900 group-hover:text-white group-hover:border-slate-900 transition-all duration-200 text-[10px] sm:text-xs font-bold ml-auto shadow-2xs">
+                    <MessageCircle size={12} className="text-slate-500 group-hover:text-white transition-colors" />
+                    <span>Inquire on WhatsApp</span>
+                  </span>
+                </div>
               </div>
             </a>
           ))}
