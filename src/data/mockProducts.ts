@@ -1,4 +1,4 @@
-export interface Product {
+﻿export interface Product {
   id: string;
   name: string;
   category: string;
@@ -211,7 +211,7 @@ export const PRODUCTS: Product[] = [
     rating: 5.0,
     inStock: true,
     featured: true,
-    image: '/hero-banner.jpg',
+    image: '/lexustec/cnmg-turning.png',
     specs: [
       { label: 'Insert Shape', value: '80° Rhombic Negative' },
       { label: 'Corner Radius', value: '0.8 mm' },

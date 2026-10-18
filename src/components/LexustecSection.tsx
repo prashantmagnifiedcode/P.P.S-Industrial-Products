@@ -15,31 +15,31 @@ const LEXUSTEC_PRODUCTS: LexustecProduct[] = [
   {
     id: 'LEXUSTEC-CNMG-120408',
     name: 'CNMG 120408 CVD Diamond Turning Inserts',
-    image: '/lexustec/cnmg-turning.jpg',
+    image: '/lexustec/cnmg-turning.png',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Lexustec CNMG 120408 Turning Inserts.'
   },
   {
     id: 'LEXUSTEC-WNMG-080408',
     name: 'WNMG 080408 Trigon 80° Heavy Turning Inserts',
-    image: '/lexustec/wnmg-trigon.jpg',
+    image: '/lexustec/wnmg-trigon.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Lexustec WNMG 080408 Trigon Inserts.'
   },
   {
     id: 'LEXUSTEC-APMT-1604',
     name: 'APMT 1604 PVD Nano-Coated Shoulder Milling Inserts',
-    image: '/lexustec/apmt-milling.jpg',
+    image: '/lexustec/apmt-milling.png',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Lexustec APMT 1604 Milling Inserts.'
   },
   {
     id: 'LEXUSTEC-MGMN-300',
     name: 'MGMN 300 Double-Ended Grooving & Parting Inserts',
-    image: '/lexustec/mgmn-grooving.jpg',
+    image: '/lexustec/mgmn-grooving.png',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Lexustec MGMN 300 Grooving Inserts.'
   },
   {
     id: 'LEXUSTEC-16ER-250',
     name: '16ER 2.50 ISO LT2527 Precision CNC Threading Inserts',
-    image: '/lexustec/lexustec-16er-actual.jpg',
+    image: '/lexustec/16er-threading.webp',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Lexustec 16ER 2.50 ISO LT2527 Threading Inserts.'
   },
   {

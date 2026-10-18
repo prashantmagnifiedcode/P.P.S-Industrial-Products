@@ -1,4 +1,4 @@
-import { Product } from './mockProducts';
+﻿import { Product } from './mockProducts';
 
 export interface IsoMaterial {
   code: 'P' | 'M' | 'K' | 'N' | 'S' | 'H';
@@ -117,7 +117,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,075.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -156,7 +156,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹675.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -195,7 +195,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹675.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -234,7 +234,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹675.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -273,7 +273,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹675.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -312,7 +312,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -351,7 +351,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -390,7 +390,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -429,7 +429,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -468,7 +468,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -507,7 +507,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -546,7 +546,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -585,7 +585,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -624,7 +624,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -663,7 +663,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -702,7 +702,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -741,7 +741,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -780,7 +780,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -819,7 +819,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -858,7 +858,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹745.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -897,7 +897,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -936,7 +936,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -975,7 +975,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1014,7 +1014,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1053,7 +1053,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1092,7 +1092,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1131,7 +1131,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1170,7 +1170,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,225.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/16er-threading.jpg",
+    "image": "/lexustec/16er-threading.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1209,7 +1209,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1248,7 +1248,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹425.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1287,7 +1287,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1326,7 +1326,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹635.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1365,7 +1365,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹725.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1404,7 +1404,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹485.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1443,7 +1443,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1482,7 +1482,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1521,7 +1521,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹750.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1560,7 +1560,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹875.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1599,7 +1599,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1638,7 +1638,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1677,7 +1677,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹425.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1716,7 +1716,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1755,7 +1755,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹635.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1794,7 +1794,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹725.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1833,7 +1833,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹485.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1872,7 +1872,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1911,7 +1911,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1950,7 +1950,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹750.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -1989,7 +1989,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹875.00",
     "shape": "Double-End Grooving",
     "shapeCode": "D",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2028,7 +2028,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,480.00",
     "shape": "Grooving",
     "shapeCode": "G",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2067,7 +2067,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,050.00",
     "shape": "Grooving",
     "shapeCode": "G",
-    "image": "/lexustec/mgmn-grooving.jpg",
+    "image": "/lexustec/mgmn-grooving.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2652,7 +2652,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹310.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2691,7 +2691,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹335.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2730,7 +2730,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹310.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "N"
@@ -2767,7 +2767,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹328.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2806,7 +2806,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹328.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2845,7 +2845,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹428.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2884,7 +2884,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹328.00",
     "shape": "Parallelogram 85° (A)",
     "shapeCode": "P",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "N"
@@ -2921,7 +2921,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹2,150.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2960,7 +2960,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹2,350.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -2999,7 +2999,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹2,850.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3038,7 +3038,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹3,290.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3077,7 +3077,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹950.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3116,7 +3116,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹310.00",
     "shape": "Rectangular (L)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3155,7 +3155,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹310.00",
     "shape": "Rectangular (L)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3194,7 +3194,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹944.00",
     "shape": "Rectangular (L)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3233,7 +3233,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3272,7 +3272,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,249.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3311,7 +3311,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,375.00",
     "shape": "Milling",
     "shapeCode": "M",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3350,7 +3350,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹584.00",
     "shape": "Octagonal (O)",
     "shapeCode": "O",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3428,7 +3428,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹680.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3467,7 +3467,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹390.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3506,7 +3506,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹310.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3545,7 +3545,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹335.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3584,7 +3584,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹300.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3623,7 +3623,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹345.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3662,7 +3662,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹300.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3701,7 +3701,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹345.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3740,7 +3740,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹580.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3779,7 +3779,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹620.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3818,7 +3818,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,050.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3857,7 +3857,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹1,150.00",
     "shape": "Round (R)",
     "shapeCode": "R",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3896,7 +3896,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹460.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3935,7 +3935,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹460.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -3974,7 +3974,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹720.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4013,7 +4013,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹720.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4052,7 +4052,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹875.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4091,7 +4091,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹355.00",
     "shape": "Laydown Threading",
     "shapeCode": "L",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4130,7 +4130,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹465.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4169,7 +4169,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹520.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/apmt-milling.jpg",
+    "image": "/lexustec/apmt-milling.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4208,7 +4208,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹225.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4247,7 +4247,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹225.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4286,7 +4286,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹225.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4325,7 +4325,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹225.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4363,7 +4363,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹225.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4401,7 +4401,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹225.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4439,7 +4439,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹245.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4478,7 +4478,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹245.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4517,7 +4517,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹245.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4556,7 +4556,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹275.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4595,7 +4595,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹275.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4634,7 +4634,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹275.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4673,7 +4673,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹295.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4711,7 +4711,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹295.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4749,7 +4749,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹295.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4787,7 +4787,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹295.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4826,7 +4826,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹295.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4865,7 +4865,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹295.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4904,7 +4904,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4943,7 +4943,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -4982,7 +4982,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5021,7 +5021,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5060,7 +5060,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5099,7 +5099,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5138,7 +5138,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5176,7 +5176,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5214,7 +5214,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5252,7 +5252,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5290,7 +5290,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5328,7 +5328,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5366,7 +5366,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5404,7 +5404,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5442,7 +5442,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹415.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5480,7 +5480,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5519,7 +5519,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5558,7 +5558,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5597,7 +5597,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹750.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5635,7 +5635,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹750.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5673,7 +5673,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹975.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5711,7 +5711,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹975.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5749,7 +5749,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹975.00",
     "shape": "80° Rhombic (C)",
     "shapeCode": "8",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5787,7 +5787,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹315.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5826,7 +5826,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹315.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5865,7 +5865,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹315.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5904,7 +5904,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹335.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5943,7 +5943,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹335.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -5982,7 +5982,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹335.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6021,7 +6021,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6060,7 +6060,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6099,7 +6099,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6138,7 +6138,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6177,7 +6177,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6216,7 +6216,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6255,7 +6255,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6294,7 +6294,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6333,7 +6333,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6372,7 +6372,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6411,7 +6411,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6450,7 +6450,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6489,7 +6489,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6527,7 +6527,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6565,7 +6565,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6603,7 +6603,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6641,7 +6641,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6679,7 +6679,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6717,7 +6717,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹515.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6755,7 +6755,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹515.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6793,7 +6793,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹515.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6831,7 +6831,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹515.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6869,7 +6869,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹515.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6907,7 +6907,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹515.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6945,7 +6945,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -6984,7 +6984,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7023,7 +7023,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "55° Diamond (D)",
     "shapeCode": "5",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7062,7 +7062,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7100,7 +7100,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7138,7 +7138,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹625.00",
     "shape": "Square 90° (S)",
     "shapeCode": "S",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7176,7 +7176,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹410.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7215,7 +7215,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹410.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7254,7 +7254,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹410.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7293,7 +7293,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹410.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7332,7 +7332,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7371,7 +7371,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7410,7 +7410,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7449,7 +7449,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7488,7 +7488,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7527,7 +7527,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7566,7 +7566,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7605,7 +7605,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7644,7 +7644,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7683,7 +7683,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7722,7 +7722,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7761,7 +7761,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7800,7 +7800,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7839,7 +7839,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹350.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7878,7 +7878,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹350.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7917,7 +7917,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹535.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7956,7 +7956,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹535.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -7995,7 +7995,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8034,7 +8034,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8073,7 +8073,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹350.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8112,7 +8112,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹350.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8151,7 +8151,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹450.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8190,7 +8190,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹450.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8229,7 +8229,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹450.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8268,7 +8268,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹450.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8307,7 +8307,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8346,7 +8346,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8385,7 +8385,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8424,7 +8424,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹375.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8463,7 +8463,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8502,7 +8502,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8541,7 +8541,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8580,7 +8580,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8619,7 +8619,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8657,7 +8657,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8695,7 +8695,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8733,7 +8733,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8771,7 +8771,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8809,7 +8809,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8847,7 +8847,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8885,7 +8885,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8923,7 +8923,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹325.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -8961,7 +8961,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9000,7 +9000,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9039,7 +9039,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9078,7 +9078,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹395.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9117,7 +9117,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9156,7 +9156,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9195,7 +9195,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9234,7 +9234,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9273,7 +9273,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9312,7 +9312,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9351,7 +9351,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9390,7 +9390,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9429,7 +9429,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9468,7 +9468,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9507,7 +9507,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9546,7 +9546,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹385.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9585,7 +9585,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹470.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9624,7 +9624,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹470.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9663,7 +9663,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹470.00",
     "shape": "60° Triangle (T)",
     "shapeCode": "6",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9702,7 +9702,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9741,7 +9741,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9780,7 +9780,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9819,7 +9819,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9858,7 +9858,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9897,7 +9897,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9936,7 +9936,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -9975,7 +9975,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10014,7 +10014,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10053,7 +10053,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹405.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10092,7 +10092,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10131,7 +10131,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10170,7 +10170,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹480.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10209,7 +10209,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹590.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10248,7 +10248,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹590.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10287,7 +10287,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹590.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10326,7 +10326,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10365,7 +10365,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10404,7 +10404,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10443,7 +10443,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10481,7 +10481,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10519,7 +10519,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10557,7 +10557,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹555.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10595,7 +10595,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹555.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10633,7 +10633,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹555.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10671,7 +10671,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10710,7 +10710,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10749,7 +10749,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹510.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10788,7 +10788,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10827,7 +10827,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10866,7 +10866,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10905,7 +10905,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10944,7 +10944,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹610.00",
     "shape": "35° Diamond (V)",
     "shapeCode": "3",
-    "image": "/lexustec/cnmg-turning.jpg",
+    "image": "/lexustec/cnmg-turning.png",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -10983,7 +10983,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹397.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11021,7 +11021,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹397.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11059,7 +11059,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹397.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11097,7 +11097,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹397.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11135,7 +11135,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹397.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11173,7 +11173,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹397.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11211,7 +11211,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11250,7 +11250,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11289,7 +11289,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11328,7 +11328,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹495.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11367,7 +11367,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹525.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11406,7 +11406,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹525.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11445,7 +11445,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹525.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11484,7 +11484,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11522,7 +11522,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11560,7 +11560,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11598,7 +11598,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11636,7 +11636,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11674,7 +11674,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11712,7 +11712,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹490.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11751,7 +11751,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹490.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11790,7 +11790,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹490.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11829,7 +11829,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11867,7 +11867,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11905,7 +11905,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹435.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11943,7 +11943,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -11981,7 +11981,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12019,7 +12019,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹475.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12057,7 +12057,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹465.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12096,7 +12096,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹465.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12135,7 +12135,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹465.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12174,7 +12174,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹575.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12213,7 +12213,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹575.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12252,7 +12252,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹575.00",
     "shape": "Trigon 80° (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12291,7 +12291,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹410.00",
     "shape": "Trigon (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12330,7 +12330,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹410.00",
     "shape": "Trigon (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12369,7 +12369,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹450.00",
     "shape": "Trigon (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12408,7 +12408,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹450.00",
     "shape": "Trigon (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12447,7 +12447,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹550.00",
     "shape": "Trigon (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",
@@ -12486,7 +12486,7 @@ export const CUTTING_INSERTS: CuttingInsert[] = [
     "priceFormatted": "₹550.00",
     "shape": "Trigon (W)",
     "shapeCode": "T",
-    "image": "/lexustec/wnmg-trigon.jpg",
+    "image": "/lexustec/wnmg-trigon.webp",
     "brand": "Lexustec / P.P.S",
     "isoMaterials": [
       "P",

@@ -21,11 +21,11 @@ const PARTNERS: Partner[] = [
     renderLogo: () => (
       <div className="flex items-center justify-center w-full h-10 px-2">
         <Image
-          src="/lexustec-dark-logo.png"
-          alt="Lexustec Cutting Tools Original Logo"
+          src="/lexustec-logo.png"
+          alt="Lexustec Cutting Tools Official Logo"
           width={140}
           height={35}
-          className="h-7 w-auto object-contain max-w-[140px]"
+          className="h-7 w-auto object-contain rounded-xs shadow-2xs max-w-[140px]"
         />
       </div>
     )
@@ -161,11 +161,11 @@ export default function PartnersSection() {
               href={partner.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3.5 rounded-xl bg-slate-50/70 hover:bg-[#f0f8fc] border border-slate-200/80 hover:border-[#007CC2] transition-all duration-200 flex flex-col justify-between items-center text-center group hover:shadow-md"
+              className="p-3.5 rounded-xl bg-slate-50/70 hover:bg-[#f0f8fc] border border-slate-200/80 hover:border-[#007CC2] transition-all duration-300 flex flex-col justify-between items-center text-center group hover:shadow-lg hover:-translate-y-1"
               title={`Visit ${partner.name}`}
             >
-              {/* Prominent Logo */}
-              <div className="w-full h-12 flex items-center justify-center">
+              {/* Prominent Logo with Smooth Scale-Up Animation */}
+              <div className="w-full h-12 flex items-center justify-center transform transition-transform duration-300 ease-out group-hover:scale-112 origin-center">
                 {partner.renderLogo()}
               </div>
 

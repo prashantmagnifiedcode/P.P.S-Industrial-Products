@@ -1,4 +1,4 @@
-export interface ToolingItem {
+﻿export interface ToolingItem {
   id: string;
   code: string;
   name: string;
@@ -84,7 +84,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '950+ Pcs in Stock (Ready for Dispatch)',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/cnmg-turning.jpg',
+        image: '/lexustec/cnmg-turning.png',
         highlight: 'Maximum Rigidity'
       },
       {
@@ -103,7 +103,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '800+ Pcs in Stock',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/wnmg-trigon.jpg',
+        image: '/lexustec/wnmg-trigon.webp',
         highlight: 'Cost-Effective Trigon'
       },
       {
@@ -134,7 +134,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
     categoryLabel: 'Carbide Turning & Boring',
     badge: 'Precision Profile Turning & Copying',
     subtitle: 'Narrow diamond geometry (55° DNMG and 35° VNMG) designed for intricate contouring, deep undercut tracing, and high-precision mirror finish tolerances.',
-    heroImage: '/lexustec/cnmg-turning.jpg',
+    heroImage: '/lexustec/cnmg-turning.png',
     popularStandards: ['DNMG 150604', 'DNMG 150608', 'DNMG 110404', 'VNMG 160404', 'VNMG 160408', 'LT20 PVD'],
     techOverview: 'DNMG (55°) and VNMG (35°) inserts offer superior clearance for profile tracing and steep bevel copying. Sharp micro-radii (0.2 - 0.4mm) eliminate chatter on slender shafts and thin-walled workpieces.',
     machiningParameters: [
@@ -159,7 +159,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '750+ Pcs in Stock (Sector 5 Gurugram)',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/cnmg-turning.jpg',
+        image: '/lexustec/cnmg-turning.png',
         highlight: 'Popular for Shaft Profiling'
       },
       {
@@ -177,7 +177,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '600+ Pcs in Stock',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/cnmg-turning.jpg'
+        image: '/lexustec/cnmg-turning.png'
       },
       {
         id: 'vnmg-160404-fp',
@@ -195,7 +195,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '480+ Pcs in Stock',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/cnmg-turning.jpg',
+        image: '/lexustec/cnmg-turning.png',
         highlight: 'Maximum Geometric Clearance'
       }
     ]
@@ -283,7 +283,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
     categoryLabel: 'Carbide Turning & Boring',
     badge: 'Precision Cut-Off & Deep O-Ring Grooving',
     subtitle: 'High-stability double-edged MGMN indexable grooving inserts and deep parting tool blocks engineered to prevent swarf entrapment and catastrophic tool failure.',
-    heroImage: '/lexustec/mgmn-grooving.jpg',
+    heroImage: '/lexustec/mgmn-grooving.png',
     popularStandards: ['MGMN 200-G', 'MGMN 300-M', 'MGMN 400-M', 'MGEHR 2020-3', 'MGEHR 2525-4', 'NCIH 32-3'],
     techOverview: 'W-profile clamping pocket ensures that the insert seats securely under extreme radial and lateral cutting forces. Dual cutting edge design halves per-edge tooling expenditure.',
     machiningParameters: [
@@ -308,7 +308,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '1,400+ Pcs in Stock (Sector 5 Gurugram)',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/mgmn-grooving.jpg',
+        image: '/lexustec/mgmn-grooving.png',
         highlight: 'Top Industrial Consumable'
       },
       {
@@ -326,7 +326,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '850+ Pcs in Stock',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/mgmn-grooving.jpg'
+        image: '/lexustec/mgmn-grooving.png'
       },
       {
         id: 'mgehr-2525-3',
@@ -343,7 +343,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '95+ Units in Stock',
         brand: 'LexusTec Industrial',
-        image: '/lexustec/mgmn-grooving.jpg'
+        image: '/lexustec/mgmn-grooving.png'
       }
     ]
   },
@@ -355,7 +355,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
     categoryLabel: 'Milling & Holemaking',
     badge: '90° True Square Shoulder Indexable Milling',
     subtitle: 'Helical cutting edge APMT inserts and modular BAP 300R / 400R milling cutter bodies delivering smooth axial cutting and true 90-degree clean step shoulders.',
-    heroImage: '/lexustec/apmt-milling.jpg',
+    heroImage: '/lexustec/apmt-milling.png',
     popularStandards: ['APMT 1135 PDER', 'APMT 1604 PDER', 'BAP 300R C20', 'BAP 400R 50-22', 'BAP 400R 63-22', 'LT20 PVD'],
     techOverview: 'True 90-degree square shoulder milling eliminates secondary finishing passes on stepped pockets and guide rails. The high-rake parallelogram geometry dramatically cuts spindle load.',
     machiningParameters: [
@@ -380,7 +380,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '2,200+ Pcs in Stock (Sector 5 Gurugram)',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/apmt-milling.jpg',
+        image: '/lexustec/apmt-milling.png',
         highlight: 'VMC Industry Standard'
       },
       {
@@ -398,7 +398,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '1,500+ Pcs in Stock',
         brand: 'LexusTec Germany Standard',
-        image: '/lexustec/apmt-milling.jpg',
+        image: '/lexustec/apmt-milling.png',
         highlight: 'Heavy Depth of Cut'
       },
       {
@@ -417,7 +417,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
         ],
         stock: '65+ Units in Stock',
         brand: 'LexusTec Industrial',
-        image: '/lexustec/apmt-milling.jpg'
+        image: '/lexustec/apmt-milling.png'
       }
     ]
   },
