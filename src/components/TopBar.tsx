@@ -6,7 +6,7 @@ export default function TopBar() {
   return (
     <aside
       aria-label="Quick contact and certifications"
-      className="w-full bg-[#007CC2] text-white border-b border-[#006aa6] text-xs relative z-50 select-none shadow-sm hidden sm:block"
+      className="w-full bg-[#007CC2] text-white border-b border-[#006aa6] text-xs relative z-50 select-none shadow-sm hidden md:block"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between">
         {/* Left Section: Sector 5 Depot & Dispatch Notice */}

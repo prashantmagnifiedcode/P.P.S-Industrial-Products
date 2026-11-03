@@ -239,8 +239,8 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
 
   return (
     <>
-      <header className="w-full bg-white border-b border-slate-200 shadow-sm">
-        {/* Main Header Bar (Existing White with Official Brand Accents) */}
+      <header className="w-full bg-[#007CC2] md:bg-white border-b border-[#006aa6] md:border-slate-200 shadow-sm transition-colors">
+        {/* Main Header Bar (Primary Blue #007CC2 on Mobile, Clean White on Desktop) */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
           <div className="flex items-center justify-between gap-4 lg:gap-8">
 
@@ -250,32 +250,40 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
               className="flex items-center gap-2.5 sm:gap-3 shrink-0 group focus:outline-none rounded-xl p-1 -m-1 transition-transform active:scale-[0.98]"
               aria-label="P.P.S Industrial Products Home"
             >
-              {/* Borderless Official Logo */}
+              {/* Borderless Official Logo (White on Mobile #007CC2 background, Blue on Desktop white background) */}
               <div className="relative shrink-0">
+                <Image
+                  src="/ppslogo-white.png"
+                  alt="P.P.S Industrial Products Logo"
+                  width={48}
+                  height={48}
+                  priority
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-transform md:hidden"
+                />
                 <Image
                   src="/ppslogo.svg"
                   alt="P.P.S Industrial Products Logo"
                   width={48}
                   height={48}
                   priority
-                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-transform"
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain group-hover:scale-105 transition-transform hidden md:block"
                 />
               </div>
 
               {/* Brand Title & Authorized Dealer Badge */}
               <div className="flex flex-col min-w-0">
                 <div className="flex items-baseline gap-2">
-                  <span className="font-extrabold text-base sm:text-xl lg:text-2xl tracking-tight text-slate-900 group-hover:text-[#007CC2] transition-colors leading-tight">
+                  <span className="font-extrabold text-base sm:text-xl lg:text-2xl tracking-tight text-white md:text-slate-900 md:group-hover:text-[#007CC2] transition-colors leading-tight">
                     P.P.S Industrial Products
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 mt-0.5">
-                  <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-[#f0f8fc] text-[#007CC2] border border-[#bde2f5] text-[9px] sm:text-[11px] font-bold tracking-wide uppercase shadow-sm shrink-0">
+                  <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-white/20 text-white border border-white/30 md:bg-[#f0f8fc] md:text-[#007CC2] md:border-[#bde2f5] text-[9px] sm:text-[11px] font-bold tracking-wide uppercase shadow-xs md:shadow-sm shrink-0">
                     <ShieldCheck size={11} className="stroke-[2.5]" />
                     Authorized Dealer
                   </span>
-                  <span className="text-slate-300 hidden md:inline">•</span>
-                  <span className="hidden md:inline text-slate-500 font-semibold text-[11px]">
+                  <span className="text-white/40 md:text-slate-300 hidden md:inline">•</span>
+                  <span className="hidden md:inline text-white/80 md:text-slate-500 font-semibold text-[11px]">
                     Precision Cutting Tools & CNC Tooling
                   </span>
                 </div>
@@ -285,12 +293,12 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
             {/* 2. Action Cluster */}
             <div className="flex items-center gap-2 sm:gap-3 shrink-0">
 
-              {/* Available on IndiaMART Verified Profile (Hidden on <sm to prevent mobile overflow) */}
+              {/* Available on IndiaMART Verified Profile (Hidden on mobile/tablet to prevent overflow) */}
               <a
                 href="https://www.indiamart.com/pps-industrialproducts/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-2.5 sm:gap-3 px-3 sm:px-3.5 py-1.5 rounded-2xl bg-white hover:bg-[#f0f8fc] border border-[#bde2f5] hover:border-[#007CC2] transition-all group shadow-xs active:scale-95 shrink-0"
+                className="hidden md:flex items-center gap-2.5 sm:gap-3 px-3 sm:px-3.5 py-1.5 rounded-2xl bg-white hover:bg-[#f0f8fc] border border-[#bde2f5] hover:border-[#007CC2] transition-all group shadow-xs active:scale-95 shrink-0"
                 title="Available on IndiaMART - P.P.S Industrial Products"
               >
                 <div className="h-8 w-11 bg-white rounded-lg border border-slate-100 flex items-center justify-center p-0.5 shadow-2xs shrink-0 group-hover:scale-105 transition-transform">
@@ -319,10 +327,10 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                 </div>
               </a>
 
-              {/* Expo & Trade Shows Navigation (Hidden on <sm to prevent mobile overflow) */}
+              {/* Expo & Trade Shows Navigation (Hidden on mobile/tablet to prevent overflow) */}
               <Link
                 href="/expo"
-                className="hidden sm:flex items-center gap-2.5 sm:gap-3 px-3 sm:px-3.5 py-1.5 rounded-2xl bg-white hover:bg-[#f0f8fc] border border-[#bde2f5] hover:border-[#007CC2] transition-all group shadow-xs active:scale-95 shrink-0"
+                className="hidden md:flex items-center gap-2.5 sm:gap-3 px-3 sm:px-3.5 py-1.5 rounded-2xl bg-white hover:bg-[#f0f8fc] border border-[#bde2f5] hover:border-[#007CC2] transition-all group shadow-xs active:scale-95 shrink-0"
                 title="Expos & Trade Shows"
               >
                 <div className="h-8 w-8 bg-white rounded-lg border border-[#bde2f5] flex items-center justify-center shadow-2xs shrink-0 group-hover:scale-105 transition-transform">
@@ -347,7 +355,7 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
               {/* Mobile Quick Direct Call Hotline Button */}
               <a
                 href="tel:+919350509134"
-                className="sm:hidden p-2.5 rounded-xl bg-[#f0f8fc] border border-[#bde2f5] text-[#007CC2] hover:bg-[#e1f2fa] active:scale-95 transition-all flex items-center justify-center shadow-2xs"
+                className="md:hidden p-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-white active:scale-95 transition-all flex items-center justify-center shadow-xs"
                 title="Call P.P.S Helpline"
                 aria-label="Call +91 93505 09134"
               >
@@ -369,7 +377,7 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2.5 rounded-xl bg-[#f0f8fc] border border-[#bde2f5] text-[#007CC2] hover:bg-[#e1f2fa] active:scale-95 transition-all flex items-center justify-center shadow-xs"
+                className="md:hidden p-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-white active:scale-95 transition-all flex items-center justify-center shadow-xs"
                 aria-label={isMobileMenuOpen ? 'Close menu' : 'Open mobile menu'}
                 aria-expanded={isMobileMenuOpen}
               >
@@ -873,21 +881,21 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
             {/* Sidebar Drawer Panel */}
             <div className="relative w-full max-w-xs sm:max-w-sm bg-white h-full flex flex-col shadow-2xl z-10 overflow-hidden text-slate-800 animate-in slide-in-from-right duration-300">
 
-              {/* Sidebar Header */}
-              <div className="px-5 py-4 bg-white border-b border-slate-200 flex items-center justify-between shadow-xs">
+              {/* Sidebar Header (Primary Blue #007CC2 with White Brand Elements) */}
+              <div className="px-5 py-4 bg-[#007CC2] border-b border-[#006aa6] flex items-center justify-between shadow-xs">
                 <div className="flex items-center gap-2.5">
                   <Image
-                    src="/ppslogo.svg"
+                    src="/ppslogo-white.png"
                     alt="P.P.S Industrial Products Logo"
                     width={36}
                     height={36}
                     className="w-8 h-8 object-contain"
                   />
                   <div className="flex flex-col">
-                    <span className="font-extrabold text-sm text-slate-900 leading-tight">
+                    <span className="font-extrabold text-sm text-white leading-tight">
                       P.P.S Industrial Products
                     </span>
-                    <span className="text-[10px] font-bold text-[#007CC2] uppercase tracking-wider">
+                    <span className="text-[10px] font-bold text-white/90 uppercase tracking-wider">
                       Authorized Dealer
                     </span>
                   </div>
@@ -896,7 +904,7 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                 <button
                   type="button"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors"
+                  className="p-2 rounded-xl text-white/80 hover:text-white hover:bg-white/15 active:scale-95 transition-all"
                   aria-label="Close Mobile Sidebar"
                 >
                   <X size={20} />
