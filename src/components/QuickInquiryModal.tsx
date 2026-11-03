@@ -62,6 +62,18 @@ export default function QuickInquiryModal() {
     };
   }, []);
 
+  // Listen for Escape key to close modal
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
+
   // Set up trigger for 1.5 section scroll or 90s timer
   const setupSecondTrigger = () => {
     // 90 seconds (1.5 min) timer fallback
@@ -169,7 +181,7 @@ export default function QuickInquiryModal() {
   return (
     <>
       {/* Floating Trigger Button - Premium Light Gray Look with Shining Glare (Centered on Mobile) */}
-      <div className="fixed bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-[45] pointer-events-auto">
+      <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-[45] pointer-events-auto">
         <button
           onClick={() => {
             setIsSuccess(false);
@@ -180,20 +192,14 @@ export default function QuickInquiryModal() {
           id="quick-quote-trigger"
           aria-label="Contact with Sales Person"
           title="Contact with Sales Person - Instant Tooling Consultation"
-          className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100 hover:from-white hover:to-white text-slate-900 px-4 py-2.5 rounded-full shadow-[0_10px_35px_rgba(0,0,0,0.18),0_2px_10px_rgba(0,0,0,0.08)] border border-slate-300 hover:border-slate-400 flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm font-extrabold focus:outline-none focus:ring-0 outline-none transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer whitespace-nowrap"
+          className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100 hover:from-white hover:to-white text-slate-900 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full shadow-[0_12px_40px_rgba(0,0,0,0.2),0_4px_12px_rgba(0,0,0,0.08)] border-[1.5px] border-slate-300 hover:border-slate-400 flex items-center gap-2.5 sm:gap-3 text-sm sm:text-base font-extrabold focus:outline-none focus:ring-0 outline-none transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer whitespace-nowrap"
         >
           {/* Continuous Shining Glare Effect */}
           <span className="absolute inset-0 overflow-hidden rounded-full pointer-events-none">
             <span className="absolute -inset-y-2 -left-1/2 w-full bg-gradient-to-r from-transparent via-white/80 to-transparent animate-shine pointer-events-none" />
           </span>
 
-          {/* Live Indicator Dot */}
-          <span className="flex h-2 w-2 relative shrink-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-          </span>
-
-          <PhoneCall size={15} className="text-slate-700 group-hover:text-slate-900 transition-colors shrink-0" />
+          <PhoneCall size={18} className="text-slate-800 group-hover:text-black transition-colors shrink-0" />
           <span className="tracking-tight whitespace-nowrap text-slate-900 group-hover:text-black">
             Contact with sales person
           </span>
