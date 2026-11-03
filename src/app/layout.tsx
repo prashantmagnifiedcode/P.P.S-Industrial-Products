@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { RfqProvider } from '@/context/RfqContext';
 import QuickInquiryModal from '@/components/QuickInquiryModal';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -58,6 +59,7 @@ export default function RootLayout({
         <RfqProvider>
           {children}
           <QuickInquiryModal />
+          <FloatingWhatsApp />
         </RfqProvider>
       </body>
     </html>
