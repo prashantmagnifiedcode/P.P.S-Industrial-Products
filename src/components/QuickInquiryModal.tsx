@@ -9,7 +9,8 @@ import {
   ShieldCheck, 
   Clock, 
   Loader2,
-  Zap
+  Zap,
+  PhoneCall
 } from 'lucide-react';
 
 const STORAGE_KEY_DISMISSED = 'pps_quick_modal_dismissed';
@@ -90,24 +91,26 @@ export default function QuickInquiryModal() {
     }
   };
 
-  // Close handler: enforces the "close twice then never show again" rule
-  const handleClose = () => {
-    const currentCount = parseInt(localStorage.getItem(STORAGE_KEY_CLOSE_COUNT) || '0', 10);
+  // Close handler: closes modal immediately and tracks dismissal
+  const handleClose = (e?: React.MouseEvent) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setIsOpen(false);
 
-    if (currentCount === 0) {
-      // First time user closes the modal
-      const newCount = 1;
-      localStorage.setItem(STORAGE_KEY_CLOSE_COUNT, newCount.toString());
-      setIsOpen(false);
-      // Arm the 1.5 section / 90s trigger for the 2nd appearance
-      setupSecondTrigger();
-    } else {
-      // User closes the modal a second time -> Never show again ("it will not show further this moal, use webstock")
-      localStorage.setItem(STORAGE_KEY_CLOSE_COUNT, '2');
-      localStorage.setItem(STORAGE_KEY_DISMISSED, 'true');
-      setIsOpen(false);
-      cleanupScroll();
-      if (timerRef.current) clearTimeout(timerRef.current);
+    try {
+      const currentCount = parseInt(localStorage.getItem(STORAGE_KEY_CLOSE_COUNT) || '0', 10);
+      if (currentCount === 0) {
+        localStorage.setItem(STORAGE_KEY_CLOSE_COUNT, '1');
+        setupSecondTrigger();
+      } else {
+        localStorage.setItem(STORAGE_KEY_CLOSE_COUNT, '2');
+        localStorage.setItem(STORAGE_KEY_DISMISSED, 'true');
+        cleanupScroll();
+        if (timerRef.current) clearTimeout(timerRef.current);
+      }
+    } catch (err) {
+      console.error(err);
     }
   };
 
@@ -165,25 +168,37 @@ export default function QuickInquiryModal() {
 
   return (
     <>
-      {/* Floating Trigger Button (Allows opening anytime even if previously dismissed) */}
-      <button
-        onClick={() => {
-          setIsSuccess(false);
-          setErrorMsg('');
-          setIsOpen(true);
-        }}
-        type="button"
-        id="quick-quote-trigger"
-        aria-label="Request Quick Tooling Quotation"
-        className="fixed bottom-5 left-5 z-40 bg-[#007CC2] hover:bg-[#006aa6] text-white px-4 py-2.5 rounded-full shadow-lg shadow-[#007CC2]/30 flex items-center gap-2 text-xs sm:text-sm font-bold border-0 focus:outline-none focus:ring-0 outline-none transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer"
-      >
-        <span className="flex h-2 w-2 relative">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-        </span>
-        <Zap size={14} className="fill-current text-amber-300 group-hover:rotate-12 transition-transform" />
-        <span>Quick Quote</span>
-      </button>
+      {/* Floating Trigger Button - Premium Light Gray Look with Shining Glare (Centered on Mobile) */}
+      <div className="fixed bottom-4 sm:bottom-5 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-[45] pointer-events-auto">
+        <button
+          onClick={() => {
+            setIsSuccess(false);
+            setErrorMsg('');
+            setIsOpen(true);
+          }}
+          type="button"
+          id="quick-quote-trigger"
+          aria-label="Contact with Sales Person"
+          title="Contact with Sales Person - Instant Tooling Consultation"
+          className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100 hover:from-white hover:to-white text-slate-900 px-4 py-2.5 rounded-full shadow-[0_10px_35px_rgba(0,0,0,0.18),0_2px_10px_rgba(0,0,0,0.08)] border border-slate-300 hover:border-slate-400 flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm font-extrabold focus:outline-none focus:ring-0 outline-none transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer whitespace-nowrap"
+        >
+          {/* Continuous Shining Glare Effect */}
+          <span className="absolute inset-0 overflow-hidden rounded-full pointer-events-none">
+            <span className="absolute -inset-y-2 -left-1/2 w-full bg-gradient-to-r from-transparent via-white/80 to-transparent animate-shine pointer-events-none" />
+          </span>
+
+          {/* Live Indicator Dot */}
+          <span className="flex h-2 w-2 relative shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+          </span>
+
+          <PhoneCall size={15} className="text-slate-700 group-hover:text-slate-900 transition-colors shrink-0" />
+          <span className="tracking-tight whitespace-nowrap text-slate-900 group-hover:text-black">
+            Contact with sales person
+          </span>
+        </button>
+      </div>
 
       {/* Main Popup Modal */}
       {isOpen && (
@@ -197,27 +212,27 @@ export default function QuickInquiryModal() {
             className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden transform transition-all animate-scale-up"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Top Signature Blue Stage Header */}
-            <div className="relative bg-gradient-to-r from-[#005e94] via-[#007CC2] to-[#005282] p-5 sm:p-6 text-white overflow-hidden">
+            {/* Top Light Gray Premium Stage Header */}
+            <div className="relative bg-gradient-to-r from-slate-100 via-slate-50 to-white p-5 sm:p-6 text-slate-900 border-b border-slate-200/90 overflow-hidden before:absolute before:top-0 before:inset-x-0 before:h-[2px] before:bg-gradient-to-r before:from-transparent before:via-slate-400 before:to-transparent">
               {/* Subtle ambient lighting */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.2),_rgba(0,0,0,0)_60%)] pointer-events-none" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(0,0,0,0.03),_rgba(0,0,0,0)_60%)] pointer-events-none" />
 
               {/* Close (X) Button */}
               <button
                 type="button"
                 onClick={handleClose}
                 aria-label="Close modal"
-                className="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2 transition-all cursor-pointer border border-white/20 active:scale-90"
+                className="absolute top-4 right-4 z-30 text-slate-600 hover:text-slate-950 bg-slate-200/80 hover:bg-slate-300 rounded-full w-9 h-9 flex items-center justify-center transition-all cursor-pointer border border-slate-300/80 active:scale-90"
               >
                 <X size={18} />
               </button>
 
-              <div className="relative z-10 space-y-1.5 pr-8">
-                <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight leading-snug">
-                  Get Instant Quotation
+              <div className="relative z-10 space-y-1.5 pr-10">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-snug">
+                  Contact with Sales Person
                 </h3>
                 
-                <p className="text-xs sm:text-sm text-white/90 leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   Drop your contact number below. Our Sector 5 Gurugram sales engineers will connect with direct dispatch pricing and stock availability.
                 </p>
               </div>
@@ -228,8 +243,8 @@ export default function QuickInquiryModal() {
               {isSuccess ? (
                 /* Success Confirmation State */
                 <div className="text-center py-4 space-y-4 animate-fade-in">
-                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-inner">
-                    <CheckCircle size={36} className="animate-bounce" />
+                  <div className="w-16 h-16 bg-slate-100 border border-slate-300 text-slate-900 rounded-full flex items-center justify-center mx-auto shadow-inner">
+                    <CheckCircle size={36} className="text-slate-900" />
                   </div>
 
                   <div className="space-y-1.5">
@@ -242,8 +257,8 @@ export default function QuickInquiryModal() {
                   </div>
 
                   {refNumber && (
-                    <div className="inline-block bg-slate-50 border border-slate-200 rounded-xl px-4 py-2 text-xs font-mono text-slate-700">
-                      Inquiry ID: <span className="font-bold text-[#007CC2]">{refNumber}</span>
+                    <div className="inline-block bg-slate-100 border border-slate-300 rounded-xl px-4 py-2 text-xs font-mono text-slate-800">
+                      Inquiry ID: <span className="font-bold text-slate-950">{refNumber}</span>
                     </div>
                   )}
 
@@ -290,7 +305,8 @@ export default function QuickInquiryModal() {
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         maxLength={15}
-                        className="w-full pl-20 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#007CC2]/30 focus:border-[#007CC2] transition-all"
+                        placeholder="Enter 10-digit mobile number"
+                        className="w-full pl-20 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#007CC2]/30 focus:border-[#007CC2] transition-all"
                       />
                     </div>
                     <p className="text-[11px] text-slate-500">
@@ -318,22 +334,22 @@ export default function QuickInquiryModal() {
                       value={requirement}
                       onChange={(e) => setRequirement(e.target.value)}
                       placeholder="e.g. 50 pcs CNMG 120408 inserts, BT40 ER32 collet chucks, 10mm carbide end mills, or specific grade inquiry..."
-                      className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#007CC2]/30 focus:border-[#007CC2] transition-all resize-none"
+                      className="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#007CC2]/30 focus:border-[#007CC2] transition-all resize-none"
                     />
                   </div>
 
                   {/* Trust Badges */}
-                  <div className="flex items-center justify-between text-[11px] text-slate-500 py-1 border-t border-slate-100">
+                  <div className="flex items-center justify-between text-[11px] text-slate-600 py-1.5 border-t border-slate-200">
                     <span className="inline-flex items-center gap-1">
-                      <Clock size={12} className="text-[#007CC2]" />
+                      <Clock size={12} className="text-slate-500" />
                       <span>15-Min Response</span>
                     </span>
                     <span className="inline-flex items-center gap-1">
-                      <ShieldCheck size={12} className="text-emerald-600" />
+                      <ShieldCheck size={12} className="text-slate-500" />
                       <span>Direct Depot Stock</span>
                     </span>
                     <span className="inline-flex items-center gap-1">
-                      <Phone size={12} className="text-[#007CC2]" />
+                      <Phone size={12} className="text-slate-500" />
                       <span>+91 9350509134</span>
                     </span>
                   </div>
@@ -342,16 +358,16 @@ export default function QuickInquiryModal() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3.5 px-4 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-[#007CC2]/25 transition-all cursor-pointer active:scale-98 disabled:opacity-70 disabled:cursor-not-allowed hover:shadow-xl"
+                    className="w-full py-3.5 px-4 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] active:bg-[#005e94] text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-[#007CC2]/25 transition-all cursor-pointer active:scale-98 disabled:opacity-70 disabled:cursor-not-allowed hover:shadow-xl"
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 size={16} className="animate-spin" />
-                        <span>Submitting to Sales Desk...</span>
+                        <Loader2 size={16} className="animate-spin text-white" />
+                        <span>Connecting to Sales Desk...</span>
                       </>
                     ) : (
                       <>
-                        <Send size={15} />
+                        <Send size={15} className="text-white" />
                         <span>Request Direct Quotation</span>
                       </>
                     )}
