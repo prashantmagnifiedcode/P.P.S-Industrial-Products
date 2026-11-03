@@ -239,7 +239,7 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
 
   return (
     <>
-      <header className="w-full bg-[#007CC2] md:bg-white border-b border-[#006aa6] md:border-slate-200 shadow-sm transition-colors">
+      <header className="w-full bg-[#007CC2] md:bg-white border-b border-[#006aa6] md:border-b-0 shadow-sm transition-colors">
         {/* Main Header Bar (Primary Blue #007CC2 on Mobile, Clean White on Desktop) */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
           <div className="flex items-center justify-between gap-4 lg:gap-8">
@@ -278,8 +278,8 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 sm:gap-2 mt-0.5">
-                  <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-white/20 text-white border border-white/30 md:bg-[#f0f8fc] md:text-[#007CC2] md:border-[#bde2f5] text-[9px] sm:text-[11px] font-bold tracking-wide uppercase shadow-xs md:shadow-sm shrink-0">
-                    <ShieldCheck size={11} className="stroke-[2.5]" />
+                  <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold tracking-wide uppercase text-blue-100 md:text-[#007CC2] shrink-0">
+                    <ShieldCheck size={12} className="stroke-[2.5]" />
                     Authorized Dealer
                   </span>
                   <span className="text-white/40 md:text-slate-300 hidden md:inline">•</span>
@@ -355,18 +355,18 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
               {/* Mobile Quick Direct Call Hotline Button */}
               <a
                 href="tel:+919350509134"
-                className="md:hidden p-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-white active:scale-95 transition-all flex items-center justify-center shadow-xs"
+                className="md:hidden p-2 text-white hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center rounded-xl focus:outline-none focus:ring-0 outline-none border-0"
                 title="Call P.P.S Helpline"
                 aria-label="Call +91 93505 09134"
               >
-                <Phone size={18} className="stroke-[2.5]" />
+                <Phone size={20} className="stroke-[2.5]" />
               </a>
 
               {/* Primary Instant RFQ Button (Desktop only - mobile accesses via sidebar) */}
               <button
                 type="button"
                 onClick={() => setIsRfqDrawerOpen(true)}
-                className="hidden md:flex relative overflow-hidden group px-5 py-2.5 rounded-2xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md shadow-[#007CC2]/20 active:scale-95 transition-all items-center gap-2 shrink-0"
+                className="hidden md:flex relative overflow-hidden group px-5 py-2.5 rounded-2xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md shadow-[#007CC2]/20 active:scale-95 transition-all items-center gap-2 shrink-0 focus:outline-none focus:ring-0 outline-none"
               >
                 <span className="absolute inset-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                 <Sparkles size={16} className="fill-current text-white" />
@@ -377,11 +377,11 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-white active:scale-95 transition-all flex items-center justify-center shadow-xs"
+                className="md:hidden p-2 text-white hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center rounded-xl focus:outline-none focus:ring-0 outline-none border-0"
                 aria-label={isMobileMenuOpen ? 'Close menu' : 'Open mobile menu'}
                 aria-expanded={isMobileMenuOpen}
               >
-                {isMobileMenuOpen ? <X size={22} className="stroke-[2.5]" /> : <Menu size={22} className="stroke-[2.5]" />}
+                {isMobileMenuOpen ? <X size={24} className="stroke-[2.5]" /> : <Menu size={24} className="stroke-[2.5]" />}
               </button>
             </div>
           </div>

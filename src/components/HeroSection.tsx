@@ -201,7 +201,7 @@ export default function HeroSection() {
       <button
         type="button"
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 top-[120px] xs:top-[130px] sm:top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-[#007CC2] border border-white/20 text-white backdrop-blur-md transition-all shadow-md active:scale-90"
+        className="absolute left-2 sm:left-4 top-[120px] xs:top-[130px] sm:top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-[#007CC2] border-0 focus:outline-none focus:ring-0 outline-none text-white backdrop-blur-md transition-all shadow-md active:scale-90"
         aria-label="Previous Slide"
       >
         <ChevronLeft size={18} className="stroke-[2.5]" />
@@ -210,7 +210,7 @@ export default function HeroSection() {
       <button
         type="button"
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 top-[120px] xs:top-[130px] sm:top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-[#007CC2] border border-white/20 text-white backdrop-blur-md transition-all shadow-md active:scale-90"
+        className="absolute right-2 sm:right-4 top-[120px] xs:top-[130px] sm:top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-[#007CC2] border-0 focus:outline-none focus:ring-0 outline-none text-white backdrop-blur-md transition-all shadow-md active:scale-90"
         aria-label="Next Slide"
       >
         <ChevronRight size={18} className="stroke-[2.5]" />

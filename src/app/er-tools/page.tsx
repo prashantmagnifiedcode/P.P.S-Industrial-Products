@@ -172,7 +172,7 @@ export default function ErToolsPage() {
       </div>
 
       {/* 2. Main Content Canvas */}
-      <div className="pt-[74px] sm:pt-[112px] md:pt-[156px] flex-1 flex flex-col">
+      <div className="pt-[70px] md:pt-[156px] flex-1 flex flex-col">
         <main className="flex-1">
 
           {/* Breadcrumb Navigation */}

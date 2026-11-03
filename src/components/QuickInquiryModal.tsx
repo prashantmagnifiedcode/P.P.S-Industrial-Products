@@ -175,7 +175,7 @@ export default function QuickInquiryModal() {
         type="button"
         id="quick-quote-trigger"
         aria-label="Request Quick Tooling Quotation"
-        className="fixed bottom-5 left-5 z-40 bg-[#007CC2] hover:bg-[#006aa6] text-white px-4 py-2.5 rounded-full shadow-lg shadow-[#007CC2]/30 flex items-center gap-2 text-xs sm:text-sm font-bold border border-white/20 transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer"
+        className="fixed bottom-5 left-5 z-40 bg-[#007CC2] hover:bg-[#006aa6] text-white px-4 py-2.5 rounded-full shadow-lg shadow-[#007CC2]/30 flex items-center gap-2 text-xs sm:text-sm font-bold border-0 focus:outline-none focus:ring-0 outline-none transition-all duration-300 hover:scale-105 active:scale-95 group cursor-pointer"
       >
         <span className="flex h-2 w-2 relative">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />

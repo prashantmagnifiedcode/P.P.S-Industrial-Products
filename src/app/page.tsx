@@ -43,10 +43,10 @@ export default function HomePage() {
       </div>
 
       {/* 2. Main Content Canvas with dynamic top padding for fixed header */}
-      <div className="pt-[74px] sm:pt-[112px] md:pt-[156px] flex-1 flex flex-col">
+      <div className="pt-[70px] md:pt-[155px] flex-1 flex flex-col bg-slate-950">
 
         {/* Sequence designed for maximum B2B reach, instant credibility & conversion */}
-        <main className="flex-1 flex flex-col">
+        <main className="flex-1 flex flex-col -mt-px">
 
           {/* 1. Hero Section: High-converting headline, CTAs, trust stats, and cutting tool imagery */}
           <HeroSection />
