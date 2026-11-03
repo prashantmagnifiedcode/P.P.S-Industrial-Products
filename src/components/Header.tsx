@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import {
   Layers,
   ChevronDown,
@@ -110,9 +111,13 @@ const BRAND_PRODUCTS: BrandProductNavItem[] = [
     description: 'Shear blades, circular slitters, bandsaws & slitting saws',
     href: '#blades',
     logo: (
-      <span className="text-[10px] font-black text-slate-900 tracking-tight leading-none text-center">
-        JALDHARA
-      </span>
+      <Image
+        src="/jaldhara-logo.svg"
+        alt="Jaldhara Small Tools"
+        width={95}
+        height={22}
+        className="h-4.5 w-auto object-contain max-w-[95px]"
+      />
     ),
   },
   {
@@ -140,6 +145,7 @@ interface HeaderProps {
 }
 
 export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {}) {
+  const pathname = usePathname();
   const [internalIsScrolled, setInternalIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -373,14 +379,10 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
           </div>
         </div>
 
-        {/* Navigation Sub-Bar (Hidden on mobile, desktop/tablet only) */}
+        {/* Navigation Sub-Bar (Hidden on mobile, desktop/tablet only) - Native Primary Color (#007CC2) */}
         <nav
           aria-label="Tooling Catalog Navigation"
-          className={`hidden md:block transition-all duration-300 ${
-            isScrolled
-              ? 'border-t border-[#006aa6] bg-[#007CC2] text-white shadow-sm'
-              : 'border-t border-slate-800/80 bg-black/95 backdrop-blur-md text-white shadow-sm'
-          }`}
+          className="hidden md:block transition-all duration-300 border-t border-[#006aa6] bg-[#007CC2] text-white shadow-sm"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-11">
@@ -391,26 +393,22 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                   type="button"
                   onClick={() => setIsCategoryMenuOpen(!isCategoryMenuOpen)}
                   className={`h-11 px-4 font-bold text-xs flex items-center gap-2.5 transition-all border-x ${
-                    isScrolled
-                      ? isCategoryMenuOpen
-                        ? 'bg-[#005688] text-white border-[#005688]'
-                        : 'bg-[#0067a3] text-white hover:bg-[#005688] border-[#005688]/60'
-                      : isCategoryMenuOpen
-                        ? 'bg-slate-800 text-white border-slate-700'
-                        : 'bg-slate-900/90 text-white hover:bg-slate-800 border-slate-800'
+                    isCategoryMenuOpen
+                      ? 'bg-[#005688] text-white border-[#005688]'
+                      : 'bg-[#0067a3] text-white hover:bg-[#005688] border-[#005688]/60'
                   }`}
                 >
                   <Layers size={15} />
                   <span>Browse All Tooling</span>
                   <ChevronDown
                     size={14}
-                    className={`transition-transform duration-200 ${isCategoryMenuOpen ? 'rotate-180' : ''}`}
+                    className={`transition-transform duration-300 ease-out ${isCategoryMenuOpen ? 'rotate-180' : ''}`}
                   />
                 </button>
 
                 {/* Mega Menu Dropdown (White Background with #007CC2 Logo Color Accents) */}
                 {isCategoryMenuOpen && (
-                  <div className="absolute top-full left-0 w-[840px] max-w-[95vw] bg-white border border-slate-200 rounded-b-2xl shadow-2xl p-4 sm:p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-150 text-slate-800">
+                  <div className="absolute top-full left-0 w-[840px] max-w-[95vw] bg-white border border-slate-200 rounded-b-2xl shadow-2xl p-4 sm:p-6 z-50 animate-dropdown text-slate-800">
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
 
                       {/* Col 1 */}
@@ -589,10 +587,10 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
               </div>
 
               {/* Center: Main Section Navigation Links (White Text on #007CC2) */}
-              <ul className="hidden md:flex items-center gap-1 lg:gap-2">
+              <ul className="hidden md:flex items-stretch gap-1 lg:gap-2 h-11">
                 {/* Brand Products Dropdown Trigger & Flyout */}
                 <li
-                  className="relative"
+                  className="relative h-11 flex items-stretch"
                   ref={productsMenuRef}
                   onMouseEnter={handleProductsMouseEnter}
                   onMouseLeave={handleProductsMouseLeave}
@@ -600,115 +598,185 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                   <button
                     type="button"
                     onClick={() => setIsProductsDropdownOpen((prev) => !prev)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                    className={`h-11 px-3 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-transparent border-b-[3px] ${
                       isProductsDropdownOpen
-                        ? isScrolled
-                          ? 'bg-white text-[#007CC2] shadow-sm'
-                          : 'bg-white text-slate-950 shadow-sm'
-                        : isScrolled
-                          ? 'text-white hover:bg-white/15'
-                          : 'text-slate-200 hover:text-white hover:bg-white/10'
+                        ? 'border-amber-400 text-white'
+                        : 'border-transparent text-white/95 hover:text-white hover:border-amber-400'
                     }`}
                     aria-expanded={isProductsDropdownOpen}
                     aria-haspopup="true"
                     aria-label="Brand Products Dropdown Menu"
                   >
                     <span>Products</span>
-                    <span
-                      className={`inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded font-extrabold text-[9px] tracking-wider uppercase transition-colors ${
-                        isProductsDropdownOpen
-                          ? isScrolled
-                            ? 'bg-[#007CC2] text-white'
-                            : 'bg-slate-950 text-white'
-                          : 'bg-amber-400 text-slate-950'
-                      }`}
-                    >
+                    <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded font-extrabold text-[9px] tracking-wider uppercase bg-amber-400 text-slate-950">
                       BRANDS
                     </span>
                     <ChevronDown
                       size={13}
-                      className={`transition-transform duration-200 ${
+                      className={`transition-transform duration-300 ease-out ${
                         isProductsDropdownOpen ? 'rotate-180' : ''
                       }`}
                     />
                   </button>
 
-                  {/* Dropdown Menu Flyout */}
+                  {/* Mega Menu Dropdown for Products Brands: White & Primary #007CC2 Theme with Crisp Black Typography */}
                   {isProductsDropdownOpen && (
-                    <div className="absolute top-full left-0 pt-1.5 w-[560px] max-w-[92vw] z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                      <div className="bg-white border border-slate-200/95 rounded-2xl shadow-2xl overflow-hidden text-slate-800">
-                        {/* Dropdown Top Header */}
-                        <div className="px-4 py-3 bg-gradient-to-r from-[#f0f8fc] via-white to-[#f0f8fc] border-b border-[#bde2f5]/70 flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="w-2 h-2 rounded-full bg-[#007CC2] animate-pulse" />
-                            <div>
-                              <h4 className="text-xs font-black uppercase tracking-wider text-[#007CC2]">
-                                Brand Products Showcases
-                              </h4>
-                              <p className="text-[10px] text-slate-500 font-medium">
-                                Direct Authorized Stockist Lines • Sector 5 Depot
-                              </p>
+                    <div className="absolute top-full left-0 w-[780px] lg:w-[840px] xl:w-[880px] max-w-[calc(100vw-32px)] bg-white border border-slate-200 rounded-b-2xl shadow-2xl overflow-hidden z-50 animate-dropdown text-slate-800">
+                      {/* Top Header Bar - Primary #007CC2 & Crisp Black Subtitle */}
+                      <div className="px-5 py-3 bg-gradient-to-r from-[#f0f8fc] via-white to-[#f0f8fc] border-b border-[#bde2f5]/80 flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-[#007CC2] animate-pulse" />
+                          <span className="text-xs font-black uppercase tracking-wider text-[#007CC2]">
+                            Authorized Brand Principals
+                          </span>
+                          <span className="text-slate-300 hidden sm:inline">•</span>
+                          <span className="text-[11px] text-black font-semibold hidden sm:inline">
+                            Direct Stockist • 100% Genuine Tooling
+                          </span>
+                        </div>
+                        <Link
+                          href="#products"
+                          onClick={() => setIsProductsDropdownOpen(false)}
+                          className="text-xs font-extrabold text-[#007CC2] hover:text-[#005688] flex items-center gap-1 group transition-colors"
+                        >
+                          <span>Explore All Brands</span>
+                          <ChevronRight size={13} className="text-[#007CC2] group-hover:translate-x-0.5 transition-transform" />
+                        </Link>
+                      </div>
+
+                      {/* 5-Column Resized Brand Grid - Crisp White Background, Balanced Padding & Black Brand Names */}
+                      <div className="p-4 sm:p-5 bg-white">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+
+                          {/* 1. Lexustec Cutting Tools */}
+                          <Link
+                            href="#lexustec"
+                            onClick={() => setIsProductsDropdownOpen(false)}
+                            className="group flex flex-col items-center justify-between p-3 sm:p-3.5 rounded-xl bg-white hover:bg-[#f0f8fc] border border-slate-200/90 hover:border-[#007CC2] shadow-xs hover:shadow-md hover:shadow-[#007CC2]/10 transition-all duration-200 hover:-translate-y-1 active:scale-[0.98]"
+                          >
+                            <div className="w-full h-15 sm:h-16 rounded-lg bg-slate-50/80 group-hover:bg-white border border-slate-100 group-hover:border-[#bde2f5] p-2.5 flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:shadow-xs">
+                              <Image
+                                src="/lexustec-logo.png"
+                                alt="Lexustec Cutting Tools"
+                                width={110}
+                                height={30}
+                                className="max-h-7 sm:max-h-8 w-auto max-w-[95px] object-contain group-hover:scale-105 transition-transform duration-200"
+                              />
                             </div>
-                          </div>
+                            <span className="text-[11px] sm:text-xs font-black text-black group-hover:text-[#007CC2] transition-colors text-center tracking-tight leading-snug line-clamp-1 block pt-2.5">
+                              Lexustec Cutting Tools
+                            </span>
+                          </Link>
+
+                          {/* 2. CP GRAT-EX® Systems */}
                           <Link
                             href="#products"
                             onClick={() => setIsProductsDropdownOpen(false)}
-                            className="text-[11px] font-bold text-[#007CC2] hover:text-[#005688] hover:underline flex items-center gap-1"
+                            className="group flex flex-col items-center justify-between p-3 sm:p-3.5 rounded-xl bg-white hover:bg-[#f0f8fc] border border-slate-200/90 hover:border-[#007CC2] shadow-xs hover:shadow-md hover:shadow-[#007CC2]/10 transition-all duration-200 hover:-translate-y-1 active:scale-[0.98]"
                           >
-                            <span>All Catalog</span>
-                            <ChevronRight size={12} />
+                            <div className="w-full h-15 sm:h-16 rounded-lg bg-slate-50/80 group-hover:bg-white border border-slate-100 group-hover:border-[#bde2f5] p-2.5 flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:shadow-xs">
+                              <Image
+                                src="https://deburringtools.com/wp-content/uploads/2023/12/cp-gratex-logo.png"
+                                alt="CP GRAT-EX® Systems"
+                                width={115}
+                                height={30}
+                                unoptimized
+                                className="max-h-7 sm:max-h-8 w-auto max-w-[105px] object-contain group-hover:scale-105 transition-transform duration-200"
+                              />
+                            </div>
+                            <span className="text-[11px] sm:text-xs font-black text-black group-hover:text-[#007CC2] transition-colors text-center tracking-tight leading-snug line-clamp-1 block pt-2.5">
+                              CP GRAT-EX® Systems
+                            </span>
                           </Link>
+
+                          {/* 3. PFERD Germany */}
+                          <Link
+                            href="#pferd"
+                            onClick={() => setIsProductsDropdownOpen(false)}
+                            className="group flex flex-col items-center justify-between p-3 sm:p-3.5 rounded-xl bg-white hover:bg-[#f0f8fc] border border-slate-200/90 hover:border-[#007CC2] shadow-xs hover:shadow-md hover:shadow-[#007CC2]/10 transition-all duration-200 hover:-translate-y-1 active:scale-[0.98]"
+                          >
+                            <div className="w-full h-15 sm:h-16 rounded-lg bg-slate-50/80 group-hover:bg-white border border-slate-100 group-hover:border-[#bde2f5] p-2.5 flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:shadow-xs">
+                              <Image
+                                src="/pferd-logo.svg"
+                                alt="PFERD Germany"
+                                width={110}
+                                height={30}
+                                className="max-h-7 sm:max-h-8 w-auto max-w-[100px] object-contain group-hover:scale-105 transition-transform duration-200"
+                              />
+                            </div>
+                            <span className="text-[11px] sm:text-xs font-black text-black group-hover:text-[#007CC2] transition-colors text-center tracking-tight leading-snug line-clamp-1 block pt-2.5">
+                              PFERD Germany
+                            </span>
+                          </Link>
+
+                          {/* 4. Jaldhara Small Tools */}
+                          <Link
+                            href="#blades"
+                            onClick={() => setIsProductsDropdownOpen(false)}
+                            className="group flex flex-col items-center justify-between p-3 sm:p-3.5 rounded-xl bg-white hover:bg-[#f0f8fc] border border-slate-200/90 hover:border-[#007CC2] shadow-xs hover:shadow-md hover:shadow-[#007CC2]/10 transition-all duration-200 hover:-translate-y-1 active:scale-[0.98]"
+                          >
+                            <div className="w-full h-15 sm:h-16 rounded-lg bg-slate-50/80 group-hover:bg-white border border-slate-100 group-hover:border-[#bde2f5] p-2.5 flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:shadow-xs">
+                              <Image
+                                src="/jaldhara-logo.svg"
+                                alt="Jaldhara Small Tools"
+                                width={120}
+                                height={30}
+                                className="max-h-7 sm:max-h-8 w-auto max-w-[105px] object-contain group-hover:scale-105 transition-transform duration-200"
+                              />
+                            </div>
+                            <span className="text-[11px] sm:text-xs font-black text-black group-hover:text-[#007CC2] transition-colors text-center tracking-tight leading-snug line-clamp-1 block pt-2.5">
+                              Jaldhara Small Tools
+                            </span>
+                          </Link>
+
+                          {/* 5. Hittco Tools Ltd */}
+                          <Link
+                            href="#hittco"
+                            onClick={() => setIsProductsDropdownOpen(false)}
+                            className="group flex flex-col items-center justify-between p-3 sm:p-3.5 rounded-xl bg-white hover:bg-[#f0f8fc] border border-slate-200/90 hover:border-[#007CC2] shadow-xs hover:shadow-md hover:shadow-[#007CC2]/10 transition-all duration-200 hover:-translate-y-1 active:scale-[0.98]"
+                          >
+                            <div className="w-full h-15 sm:h-16 rounded-lg bg-slate-50/80 group-hover:bg-white border border-slate-100 group-hover:border-[#bde2f5] p-2.5 flex items-center justify-center transition-all duration-200 shadow-2xs group-hover:shadow-xs">
+                              <Image
+                                src="/hittco-logo.png"
+                                alt="Hittco Tools Ltd"
+                                width={110}
+                                height={30}
+                                className="max-h-6.5 sm:max-h-7 w-auto max-w-[90px] object-contain group-hover:scale-105 transition-transform duration-200"
+                              />
+                            </div>
+                            <span className="text-[11px] sm:text-xs font-black text-black group-hover:text-[#007CC2] transition-colors text-center tracking-tight leading-snug line-clamp-1 block pt-2.5">
+                              Hittco Tools Ltd
+                            </span>
+                          </Link>
+
                         </div>
+                      </div>
 
-                        {/* Brand Products List */}
-                        <div className="p-2.5 space-y-1">
-                          {BRAND_PRODUCTS.map((brand) => (
-                            <Link
-                              key={brand.id}
-                              href={brand.href}
-                              onClick={() => setIsProductsDropdownOpen(false)}
-                              className="group flex items-center justify-between p-2.5 rounded-xl hover:bg-[#f0f8fc] border border-transparent hover:border-[#bde2f5] transition-all"
-                            >
-                              <div className="flex items-center gap-3 min-w-0">
-                                <div className="w-24 h-10 shrink-0 bg-slate-50 group-hover:bg-white rounded-lg border border-slate-200/80 group-hover:border-[#bde2f5] flex items-center justify-center p-1.5 transition-colors shadow-2xs">
-                                  {brand.logo}
-                                </div>
-                                <div className="min-w-0 text-left">
-                                  <div className="flex items-center gap-2 mb-0.5">
-                                    <span className="text-xs font-bold text-slate-900 group-hover:text-[#007CC2] transition-colors truncate">
-                                      {brand.name}
-                                    </span>
-                                    <span className={`px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider border ${brand.badgeClass}`}>
-                                      {brand.badge}
-                                    </span>
-                                  </div>
-                                  <p className="text-[11px] text-slate-500 truncate group-hover:text-slate-600 transition-colors">
-                                    {brand.description}
-                                  </p>
-                                </div>
-                              </div>
-
-                              <div className="shrink-0 pl-2">
-                                <div className="w-6 h-6 rounded-lg bg-slate-100 group-hover:bg-[#007CC2] text-slate-400 group-hover:text-white flex items-center justify-center transition-all group-hover:translate-x-0.5">
-                                  <ChevronRight size={13} />
-                                </div>
-                              </div>
-                            </Link>
-                          ))}
+                      {/* Sleek Bottom Bar with Guarantee & RFQ - Clean Slate & Primary Accents */}
+                      <div className="px-5 py-3 bg-[#f8fafc] border-t border-slate-200/90 flex flex-wrap items-center justify-between gap-3 text-xs">
+                        <div className="flex items-center gap-2 text-black font-semibold">
+                          <ShieldCheck size={15} className="text-[#007CC2]" />
+                          <span>Sector 5 Gurugram Depot • Pan-India Express Courier</span>
                         </div>
-
-                        {/* Dropdown Footer */}
-                        <div className="px-4 py-2.5 bg-slate-50 border-t border-slate-200/70 flex items-center justify-between text-[11px]">
-                          <span className="text-slate-500 font-medium">
-                            Need urgent same-day tooling dispatch?
-                          </span>
+                        <div className="flex items-center gap-4">
                           <a
                             href="tel:+919350509134"
-                            className="font-bold text-[#007CC2] hover:text-[#006aa6] flex items-center gap-1 hover:underline"
+                            className="font-extrabold text-black hover:text-[#007CC2] flex items-center gap-1.5 transition-colors"
                           >
-                            <Phone size={11} />
-                            <span>Call +91 93505 09134</span>
+                            <Phone size={12} className="text-[#007CC2]" />
+                            <span>+91 93505 09134</span>
                           </a>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setIsProductsDropdownOpen(false);
+                              setIsRfqDrawerOpen(true);
+                            }}
+                            className="px-3.5 py-1.5 rounded-lg bg-[#007CC2] hover:bg-[#006aa6] text-white font-extrabold text-xs flex items-center gap-1.5 transition-all shadow-xs active:scale-95 cursor-pointer"
+                          >
+                            <Sparkles size={12} />
+                            <span>Instant RFQ</span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -717,13 +785,13 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                 <li>
                   <Link
                     href="/inserts"
-                    className={`px-2 lg:px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-white hover:bg-white/15'
-                        : 'text-slate-200 hover:text-white hover:bg-white/10'
+                    className={`relative h-11 px-2.5 lg:px-3 text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap bg-transparent border-b-[3px] ${
+                      pathname === '/inserts'
+                        ? 'border-amber-400 text-white'
+                        : 'border-transparent text-white/95 hover:text-white hover:border-amber-400'
                     }`}
                   >
-                    <TableProperties size={13} className="text-cyan-300" />
+                    <TableProperties size={13} className="text-cyan-200" />
                     <span>Cutting Inserts</span>
                     <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-cyan-400 text-slate-950 font-extrabold text-[9px] tracking-wider uppercase">
                       TABLE
@@ -734,13 +802,13 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                 <li>
                   <Link
                     href="/er-tools"
-                    className={`px-2 lg:px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-white hover:bg-white/15'
-                        : 'text-slate-200 hover:text-white hover:bg-white/10'
+                    className={`relative h-11 px-2.5 lg:px-3 text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap bg-transparent border-b-[3px] ${
+                      pathname === '/er-tools'
+                        ? 'border-amber-400 text-white'
+                        : 'border-transparent text-white/95 hover:text-white hover:border-amber-400'
                     }`}
                   >
-                    <Layers size={13} className="text-cyan-300" />
+                    <Layers size={13} className="text-cyan-200" />
                     <span>ER Collets</span>
                     <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-amber-400 text-slate-950 font-extrabold text-[9px] tracking-wider uppercase">
                       DIN 6499
@@ -750,27 +818,24 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
 
                 <li>
                   <Link
-                    href="/#partners"
-                    className={`px-2 lg:px-3 py-1.5 rounded-lg text-xs font-bold transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-white hover:bg-white/15'
-                        : 'text-slate-200 hover:text-white hover:bg-white/10'
+                    href="/dealership"
+                    className={`relative h-11 px-2.5 lg:px-3 text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap bg-transparent border-b-[3px] ${
+                      pathname === '/dealership'
+                        ? 'border-amber-400 text-white'
+                        : 'border-transparent text-white/95 hover:text-white hover:border-amber-400'
                     }`}
                   >
-                    <span>Brand Partners</span>
+                    <ShieldCheck size={13} className="text-cyan-200" />
+                    <span>Dealership</span>
                     <span className="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded bg-amber-400 text-slate-950 font-extrabold text-[9px] tracking-wider uppercase">
-                      <Flame size={9} /> DIRECT
+                      OFFICIAL
                     </span>
                   </Link>
                 </li>
                 <li className="hidden lg:block">
                   <Link
                     href="/#about"
-                    className={`px-2.5 lg:px-3 py-1.5 rounded-lg text-xs font-bold transition-colors whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-white hover:bg-white/15'
-                        : 'text-slate-200 hover:text-white hover:bg-white/10'
-                    }`}
+                    className="relative h-11 px-2.5 lg:px-3 text-xs font-bold transition-all flex items-center whitespace-nowrap text-white/95 hover:text-white border-b-[3px] border-transparent hover:border-amber-400 bg-transparent"
                   >
                     About PPS
                   </Link>
@@ -778,11 +843,7 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                 <li className="hidden xl:block">
                   <Link
                     href="/#team"
-                    className={`px-2.5 lg:px-3 py-1.5 rounded-lg text-xs font-bold transition-colors whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-white hover:bg-white/15'
-                        : 'text-slate-200 hover:text-white hover:bg-white/10'
-                    }`}
+                    className="relative h-11 px-2.5 lg:px-3 text-xs font-bold transition-all flex items-center whitespace-nowrap text-white/95 hover:text-white border-b-[3px] border-transparent hover:border-amber-400 bg-transparent"
                   >
                     Our Team
                   </Link>
@@ -790,11 +851,7 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                 <li>
                   <Link
                     href="/#contact"
-                    className={`px-2 lg:px-3 py-1.5 rounded-lg text-xs font-bold transition-colors whitespace-nowrap ${
-                      isScrolled
-                        ? 'text-white hover:bg-white/15'
-                        : 'text-slate-200 hover:text-white hover:bg-white/10'
-                    }`}
+                    className="relative h-11 px-2.5 lg:px-3 text-xs font-bold transition-all flex items-center whitespace-nowrap text-white/95 hover:text-white border-b-[3px] border-transparent hover:border-amber-400 bg-transparent"
                   >
                     Depot &amp; Contact
                   </Link>
@@ -920,6 +977,20 @@ export default function Header({ isScrolled: propIsScrolled }: HeaderProps = {})
                       <span className="text-xs font-black text-slate-900 truncate">IndiaMART</span>
                     </div>
                   </a>
+
+                  <Link
+                    href="/dealership"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="p-2.5 rounded-xl bg-slate-50 hover:bg-[#f0f8fc] border border-slate-200 hover:border-[#bde2f5] flex items-center gap-2 transition-all shadow-2xs"
+                  >
+                    <div className="w-6 h-6 rounded-lg bg-white border border-[#bde2f5] flex items-center justify-center shrink-0">
+                      <ShieldCheck size={13} className="text-[#007CC2]" />
+                    </div>
+                    <div className="flex flex-col text-left min-w-0">
+                      <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">Official</span>
+                      <span className="text-xs font-black text-slate-900 truncate">Dealerships</span>
+                    </div>
+                  </Link>
 
                   <Link
                     href="/expo"

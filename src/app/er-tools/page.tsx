@@ -11,7 +11,6 @@ import {
   Gauge,
   PhoneCall,
   MessageCircle,
-  FileSpreadsheet,
   Download,
   ChevronRight,
   ArrowRight,
@@ -189,39 +188,40 @@ export default function ErToolsPage() {
             </div>
           </div>
 
-          {/* Hero Section */}
-          <section className="bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white py-16 sm:py-20 relative overflow-hidden">
-            {/* Ambient Lighting */}
-            <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#007CC2]/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-10 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+          {/* Hero Section - Official Primary Blue (#007CC2) */}
+          <section className="bg-gradient-to-br from-[#005f96] via-[#007CC2] to-[#0089d6] text-white py-14 sm:py-18 relative overflow-hidden shadow-sm">
+            {/* Ambient Lighting & Technical Blueprint Pattern */}
+            <div className="absolute inset-0 bg-[radial-gradient(#ffffff18_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none opacity-40" />
+            <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-white/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-10 w-[400px] h-[400px] bg-cyan-300/20 rounded-full blur-3xl pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="max-w-3xl space-y-4 text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#38bdf8] text-xs font-bold uppercase tracking-wider backdrop-blur-xs">
-                  <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 border border-white/25 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-xs shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-amber-300 animate-pulse" />
                   <span>DIN 6499 / ISO 15488 Certified • Gurugram Depot</span>
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-                  Industrial <span className="bg-gradient-to-r from-[#38bdf8] via-[#00a3ff] to-[#60a5fa] bg-clip-text text-transparent">ER Collet Systems</span>
+                  Industrial <span className="text-amber-300 drop-shadow-sm">ER Collet Systems</span>
                 </h1>
 
-                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+                <p className="text-sm sm:text-base text-blue-50 leading-relaxed font-normal">
                   High-precision toolholding collets, dynamically balanced clamping nuts, BT40/HSK spindle chucks, and master box sets. Manufactured from cryogenically stabilized SUJ2 alloy bearing steel with concentric runout certified down to <strong className="text-white font-bold">&le; 0.005 mm (5 Microns Class AA)</strong>.
                 </p>
 
                 {/* Quick Trust Chips */}
                 <div className="flex flex-wrap items-center gap-2 pt-2">
-                  <span className="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-200 font-semibold flex items-center gap-1.5">
-                    <Check size={14} className="text-emerald-400" />
+                  <span className="px-3 py-1.5 rounded-xl bg-white/15 border border-white/25 text-xs text-white font-bold flex items-center gap-1.5 shadow-xs backdrop-blur-xs">
+                    <Check size={14} className="text-amber-300" />
                     Sub-Zero Cryogenic (-120°C)
                   </span>
-                  <span className="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-200 font-semibold flex items-center gap-1.5">
-                    <Check size={14} className="text-emerald-400" />
+                  <span className="px-3 py-1.5 rounded-xl bg-white/15 border border-white/25 text-xs text-white font-bold flex items-center gap-1.5 shadow-xs backdrop-blur-xs">
+                    <Check size={14} className="text-amber-300" />
                     16-Slot 360° Circumferential Grip
                   </span>
-                  <span className="px-3 py-1 rounded-lg bg-white/10 border border-white/15 text-xs text-slate-200 font-semibold flex items-center gap-1.5">
-                    <Check size={14} className="text-emerald-400" />
+                  <span className="px-3 py-1.5 rounded-xl bg-white/15 border border-white/25 text-xs text-white font-bold flex items-center gap-1.5 shadow-xs backdrop-blur-xs">
+                    <Check size={14} className="text-amber-300" />
                     Same-Day Depot Dispatch
                   </span>
                 </div>
@@ -235,10 +235,10 @@ export default function ErToolsPage() {
               <span className="text-xs font-bold uppercase tracking-wider text-[#007CC2]">
                 Visual Product Range
               </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1">
+              <h2 className="text-2xl sm:text-3xl font-black text-black tracking-tight mt-1">
                 Precision Collet &amp; Clamping Hardware
               </h2>
-              <p className="text-sm text-slate-600 mt-1">
+              <p className="text-sm text-black/85 font-medium mt-1">
                 Explore our full spectrum of CNC spring collets, nuts, holders, and complete master sets.
               </p>
             </div>
@@ -272,18 +272,18 @@ export default function ErToolsPage() {
                     <span className="text-[11px] font-bold text-[#007CC2] uppercase tracking-wider block">
                       Spring Collets
                     </span>
-                    <h3 className="font-black text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug">
+                    <h3 className="font-black text-base sm:text-lg text-black group-hover:text-[#007CC2] transition-colors leading-snug">
                       ER Precision Spring Collets
                     </h3>
-                    <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                    <p className="text-xs text-black/80 font-medium mt-1.5 leading-relaxed">
                       16-slot split geometry crafted from SUJ2 alloy bearing steel. Available from ER8 to ER50 with 100% elastic recovery.
                     </p>
                   </div>
 
                   <div className="space-y-2 pt-2 border-t border-slate-100">
-                    <div className="flex flex-wrap gap-1 text-[10px] font-bold">
+                    <div className="flex flex-wrap gap-1 text-[10px] font-extrabold">
                       {['ER11', 'ER16', 'ER20', 'ER25', 'ER32', 'ER40'].map(s => (
-                        <span key={s} className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">
+                        <span key={s} className="px-1.5 py-0.5 rounded bg-[#f0f8fc] text-black border border-[#bde2f5]">
                           {s}
                         </span>
                       ))}
@@ -293,7 +293,7 @@ export default function ErToolsPage() {
                       <button
                         type="button"
                         onClick={() => handleColletRfq('ER Precision Spring Collets', 'Collets', 'ER11 to ER40, Runout <0.005mm')}
-                        className="flex-1 py-2 px-3 rounded-xl bg-slate-900 hover:bg-[#007CC2] text-white font-bold text-xs transition-colors shadow-sm"
+                        className="flex-1 py-2 px-3 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs transition-all shadow-xs hover:shadow-md hover:shadow-[#007CC2]/20 active:scale-95 cursor-pointer"
                       >
                         Add to RFQ
                       </button>
@@ -338,18 +338,18 @@ export default function ErToolsPage() {
                     <span className="text-[11px] font-bold text-[#007CC2] uppercase tracking-wider block">
                       Clamping Nuts
                     </span>
-                    <h3 className="font-black text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug">
+                    <h3 className="font-black text-base sm:text-lg text-black group-hover:text-[#007CC2] transition-colors leading-snug">
                       Balanced ER Clamping Nuts
                     </h3>
-                    <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                    <p className="text-xs text-black/80 font-medium mt-1.5 leading-relaxed">
                       Precision ground threads delivering 25% higher clamping pressure. Available in Hexagon (UM), Mini (M-type), and Bearing nut designs.
                     </p>
                   </div>
 
                   <div className="space-y-2 pt-2 border-t border-slate-100">
-                    <div className="flex flex-wrap gap-1 text-[10px] font-bold">
+                    <div className="flex flex-wrap gap-1 text-[10px] font-extrabold">
                       {['Hex UM', 'Mini M', 'Ball Bearing', 'Coolant'].map(s => (
-                        <span key={s} className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">
+                        <span key={s} className="px-1.5 py-0.5 rounded bg-[#f0f8fc] text-black border border-[#bde2f5]">
                           {s}
                         </span>
                       ))}
@@ -359,7 +359,7 @@ export default function ErToolsPage() {
                       <button
                         type="button"
                         onClick={() => handleColletRfq('Balanced ER Clamping Nuts', 'Clamping Nuts', 'Standard, Mini & Bearing nuts, G2.5 balanced')}
-                        className="flex-1 py-2 px-3 rounded-xl bg-slate-900 hover:bg-[#007CC2] text-white font-bold text-xs transition-colors shadow-sm"
+                        className="flex-1 py-2 px-3 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs transition-all shadow-xs hover:shadow-md hover:shadow-[#007CC2]/20 active:scale-95 cursor-pointer"
                       >
                         Add to RFQ
                       </button>
@@ -404,18 +404,18 @@ export default function ErToolsPage() {
                     <span className="text-[11px] font-bold text-[#007CC2] uppercase tracking-wider block">
                       Spindle Toolholders
                     </span>
-                    <h3 className="font-black text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug">
+                    <h3 className="font-black text-base sm:text-lg text-black group-hover:text-[#007CC2] transition-colors leading-snug">
                       Integrated Collet Chucks
                     </h3>
-                    <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                    <p className="text-xs text-black/80 font-medium mt-1.5 leading-relaxed">
                       Case-hardened 20CrMnTi alloy steel with ground AT3 taper contact. Pre-balanced to G2.5 at 18,000–25,000 RPM with thru-coolant bore.
                     </p>
                   </div>
 
                   <div className="space-y-2 pt-2 border-t border-slate-100">
-                    <div className="flex flex-wrap gap-1 text-[10px] font-bold">
+                    <div className="flex flex-wrap gap-1 text-[10px] font-extrabold">
                       {['BT40-ER32', 'BT40-ER25', 'BT50-ER40', 'HSK63A'].map(s => (
-                        <span key={s} className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">
+                        <span key={s} className="px-1.5 py-0.5 rounded bg-[#f0f8fc] text-black border border-[#bde2f5]">
                           {s}
                         </span>
                       ))}
@@ -425,7 +425,7 @@ export default function ErToolsPage() {
                       <button
                         type="button"
                         onClick={() => handleColletRfq('Integrated Collet Chucks', 'Toolholders', 'BT40, BT50, HSK63A with G2.5 balance')}
-                        className="flex-1 py-2 px-3 rounded-xl bg-slate-900 hover:bg-[#007CC2] text-white font-bold text-xs transition-colors shadow-sm"
+                        className="flex-1 py-2 px-3 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs transition-all shadow-xs hover:shadow-md hover:shadow-[#007CC2]/20 active:scale-95 cursor-pointer"
                       >
                         Add to RFQ
                       </button>
@@ -470,18 +470,18 @@ export default function ErToolsPage() {
                     <span className="text-[11px] font-bold text-[#007CC2] uppercase tracking-wider block">
                       Master Box Sets
                     </span>
-                    <h3 className="font-black text-base sm:text-lg text-slate-900 group-hover:text-[#007CC2] transition-colors leading-snug">
+                    <h3 className="font-black text-base sm:text-lg text-black group-hover:text-[#007CC2] transition-colors leading-snug">
                       Master Collet Sets with Wrench
                     </h3>
-                    <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                    <p className="text-xs text-black/80 font-medium mt-1.5 leading-relaxed">
                       Complete size progressions in fitted wooden cases with torque spanner. Certified individual runout test sheet included.
                     </p>
                   </div>
 
                   <div className="space-y-2 pt-2 border-t border-slate-100">
-                    <div className="flex flex-wrap gap-1 text-[10px] font-bold">
+                    <div className="flex flex-wrap gap-1 text-[10px] font-extrabold">
                       {['ER16 (10 pcs)', 'ER25 (15 pcs)', 'ER32 (18 pcs)', 'ER40 (23 pcs)'].map(s => (
-                        <span key={s} className="px-1.5 py-0.5 rounded bg-slate-100 text-slate-700">
+                        <span key={s} className="px-1.5 py-0.5 rounded bg-[#f0f8fc] text-black border border-[#bde2f5]">
                           {s}
                         </span>
                       ))}
@@ -491,7 +491,7 @@ export default function ErToolsPage() {
                       <button
                         type="button"
                         onClick={() => handleColletRfq('Master ER Collet Sets with Wrench', 'Collet Sets', 'ER16 to ER40 master sets in fitted wooden box')}
-                        className="flex-1 py-2 px-3 rounded-xl bg-slate-900 hover:bg-[#007CC2] text-white font-bold text-xs transition-colors shadow-sm"
+                        className="flex-1 py-2 px-3 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs transition-all shadow-xs hover:shadow-md hover:shadow-[#007CC2]/20 active:scale-95 cursor-pointer"
                       >
                         Add to RFQ
                       </button>
@@ -570,33 +570,33 @@ export default function ErToolsPage() {
                       </div>
 
                       {/* Specs Grid with Increased Text */}
-                      <div className="grid grid-cols-2 gap-2.5 p-3 rounded-2xl bg-slate-50 border border-slate-200/80 text-xs mb-3.5 font-sans">
+                      <div className="grid grid-cols-2 gap-2.5 p-3 rounded-2xl bg-[#f0f8fc] border border-[#bde2f5]/90 text-xs mb-3.5 font-sans">
                         <div>
-                          <span className="text-[11px] uppercase font-bold text-slate-500 block tracking-wider">
+                          <span className="text-[11px] uppercase font-black text-[#007CC2] block tracking-wider">
                             Major Dia (D)
                           </span>
-                          <span className="font-black text-base sm:text-lg text-slate-900">
+                          <span className="font-black text-base sm:text-lg text-black">
                             {item.diameter}
                           </span>
                         </div>
                         <div>
-                          <span className="text-[11px] uppercase font-bold text-slate-500 block tracking-wider">
+                          <span className="text-[11px] uppercase font-black text-[#007CC2] block tracking-wider">
                             Overall Length (L)
                           </span>
-                          <span className="font-black text-base sm:text-lg text-slate-900">
+                          <span className="font-black text-base sm:text-lg text-black">
                             {item.length}
                           </span>
                         </div>
                         <div>
-                          <span className="text-[11px] uppercase font-bold text-slate-500 block tracking-wider">
+                          <span className="text-[11px] uppercase font-black text-[#007CC2] block tracking-wider">
                             Standard
                           </span>
-                          <span className="font-bold text-xs sm:text-sm text-slate-800 truncate block">
+                          <span className="font-black text-xs sm:text-sm text-black truncate block">
                             DIN 6499B
                           </span>
                         </div>
                         <div>
-                          <span className="text-[11px] uppercase font-bold text-slate-500 block tracking-wider">
+                          <span className="text-[11px] uppercase font-black text-[#007CC2] block tracking-wider">
                             Grade
                           </span>
                           <span className="font-black text-xs sm:text-sm text-[#007CC2]">
@@ -605,17 +605,17 @@ export default function ErToolsPage() {
                         </div>
                       </div>
 
-                      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-3.5">
+                      <p className="text-xs sm:text-sm text-black/85 leading-relaxed font-medium mb-3.5">
                         {item.application}
                       </p>
 
                       <div className="space-y-1.5 mb-4">
-                        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
+                        <span className="text-[11px] font-black uppercase tracking-wider text-black block">
                           Stocked Bore Sizes:
                         </span>
                         <div className="flex flex-wrap gap-1.5">
                           {item.popularSizes.map(sz => (
-                            <span key={sz} className="px-2 py-0.5 rounded-lg bg-slate-100 text-slate-700 font-bold text-xs">
+                            <span key={sz} className="px-2 py-0.5 rounded-lg bg-white text-black font-extrabold text-xs border border-[#bde2f5]">
                               {sz}
                             </span>
                           ))}
@@ -627,7 +627,7 @@ export default function ErToolsPage() {
                       <button
                         type="button"
                         onClick={() => handleColletRfq(`${item.series} Precision Collet (${item.range})`, 'ER Collets', `Concentric runout ${item.runout}, D=${item.diameter}, L=${item.length}`)}
-                        className="flex-1 py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-[#007CC2] text-white font-extrabold text-xs sm:text-sm transition-colors shadow-xs"
+                        className="flex-1 py-2.5 px-3 rounded-xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-extrabold text-xs sm:text-sm transition-all shadow-xs hover:shadow-md hover:shadow-[#007CC2]/20 active:scale-95 cursor-pointer"
                       >
                         Order {item.series}
                       </button>
@@ -654,7 +654,7 @@ export default function ErToolsPage() {
               <span className="text-xs font-bold uppercase tracking-wider text-[#007CC2]">
                 Quality Assurance
               </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mt-1">
+              <h2 className="text-2xl sm:text-3xl font-black text-black tracking-tight mt-1">
                 Engineered for High-Speed CNC Production
               </h2>
             </div>
@@ -664,10 +664,10 @@ export default function ErToolsPage() {
                 <div className="w-12 h-12 rounded-2xl bg-[#007CC2]/10 border border-[#bde2f5] flex items-center justify-center text-[#007CC2]">
                   <Gauge size={22} />
                 </div>
-                <h3 className="font-black text-lg text-slate-900">
+                <h3 className="font-black text-lg text-black">
                   Certified &lt;0.005mm Runout
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-black/85 leading-relaxed font-medium">
                   Each collet is 100% inspected at 4D distance from nose. Low runout guarantees balanced chip load on cutting flutes and extends solid carbide tool life up to 40%.
                 </p>
               </div>
@@ -676,10 +676,10 @@ export default function ErToolsPage() {
                 <div className="w-12 h-12 rounded-2xl bg-[#007CC2]/10 border border-[#bde2f5] flex items-center justify-center text-[#007CC2]">
                   <ShieldCheck size={22} />
                 </div>
-                <h3 className="font-black text-lg text-slate-900">
+                <h3 className="font-black text-lg text-black">
                   Cryogenic Sub-Zero Stabilized
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-black/85 leading-relaxed font-medium">
                   Manufactured from high-grade SUJ2 bearing steel and deep-cryogenically treated at -120°C to eliminate retained austenite and prevent dimensional drift over years of use.
                 </p>
               </div>
@@ -688,56 +688,12 @@ export default function ErToolsPage() {
                 <div className="w-12 h-12 rounded-2xl bg-[#007CC2]/10 border border-[#bde2f5] flex items-center justify-center text-[#007CC2]">
                   <Layers size={22} />
                 </div>
-                <h3 className="font-black text-lg text-slate-900">
+                <h3 className="font-black text-lg text-black">
                   Complete Toolholding Ecosystem
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-black/85 leading-relaxed font-medium">
                   Full stock of collets, balanced clamping nuts (standard, mini, bearing), BT40/BT50 holders, pull studs, and torque spanner wrenches ready for immediate depot dispatch.
                 </p>
-              </div>
-            </div>
-          </section>
-
-          {/* High-Converting CTA Banner */}
-          <section className="pb-16 sm:pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rounded-3xl bg-gradient-to-r from-slate-950 via-[#061e33] to-slate-950 p-6 sm:p-10 text-white shadow-xl border border-slate-800 relative overflow-hidden">
-              <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#007CC2]/20 rounded-full blur-3xl pointer-events-none" />
-
-              <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
-                <div className="space-y-3 max-w-2xl">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-[#38bdf8] text-xs font-bold uppercase tracking-wider">
-                    <FileSpreadsheet size={14} className="text-[#38bdf8]" />
-                    <span>Direct Factory &amp; Depot Pricing</span>
-                  </div>
-
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                    Need Custom Sets or Bulk <span className="text-[#38bdf8]">Collet Packages</span>?
-                  </h3>
-
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                    Contact our Sector 5 Gurugram tooling desk for bulk quantity discounts, special imperial size sets, and integrated BT40 spindle tooling packages.
-                  </p>
-                </div>
-
-                <div className="shrink-0 flex flex-col sm:flex-row items-center gap-3">
-                  <a
-                    href="https://wa.me/919350509134?text=Hi%20P.P.S%20Industrial%2C%20please%20share%20bulk%20pricing%20and%20catalog%20for%20ER%20Collet%20systems."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg transition-all"
-                  >
-                    <MessageCircle size={18} />
-                    <span>WhatsApp Collet Desk</span>
-                  </a>
-
-                  <a
-                    href="tel:+919350509134"
-                    className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all"
-                  >
-                    <PhoneCall size={16} />
-                    <span>Call +91 93505 09134</span>
-                  </a>
-                </div>
               </div>
             </div>
           </section>

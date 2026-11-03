@@ -174,8 +174,8 @@ function InsertsContent() {
           </div>
         </div>
 
-        {/* Hero Banner: Featuring Authentic LexusTec Tooling Background Image */}
-        <div className="relative text-white border-b border-slate-800 pt-14 sm:pt-18 lg:pt-22 pb-4 sm:pb-5 overflow-hidden bg-slate-950 flex flex-col justify-end min-h-[280px] sm:min-h-[330px] lg:min-h-[360px]">
+        {/* Hero Banner: Premium Lighter Gray with Authentic LexusTec Tooling Background Image */}
+        <div className="relative text-slate-900 border-b border-slate-200/90 pt-10 sm:pt-14 lg:pt-16 pb-4 sm:pb-5 overflow-hidden bg-gradient-to-b from-slate-100/90 via-slate-50 to-white flex flex-col justify-end min-h-[280px] sm:min-h-[330px] lg:min-h-[360px]">
           
           {/* Authentic LexusTec Inserts & Packaging Background Photo - Vividly Visible */}
           <div className="absolute inset-0 z-0">
@@ -185,38 +185,40 @@ function InsertsContent() {
               fill
               priority
               sizes="100vw"
-              className="object-cover object-center sm:object-right opacity-90 select-none pointer-events-none"
+              className="object-cover object-center sm:object-right opacity-85 select-none pointer-events-none"
             />
-            {/* Subtle Vignette for Text Clarity without Bottom Shadow */}
-            <div className="absolute inset-0 bg-slate-950/25" />
-            
-            {/* Top Subtle Edge Gradient */}
-            <div className="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-slate-950/70 to-transparent" />
+            {/* Soft Lighter Gray Frosted Vignette for Crisp Text Readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-50/95 via-slate-50/80 to-slate-50/35" />
+            <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-50 to-transparent" />
 
             {/* High-Tech Blueprint Grids Watermark */}
-            <div className="absolute inset-0 bg-[radial-gradient(#007CC220_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none opacity-30" />
+            <div className="absolute inset-0 bg-[radial-gradient(#64748b20_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none opacity-40" />
           </div>
 
-          <div className="absolute -top-32 right-12 w-[480px] h-[480px] bg-[#007CC2]/20 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-24 left-10 w-[360px] h-[360px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-32 right-12 w-[480px] h-[480px] bg-slate-200/60 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 left-10 w-[360px] h-[360px] bg-[#007CC2]/5 rounded-full blur-3xl pointer-events-none" />
 
           {/* Main Content Layout - All Items Aligned to Bottom */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-end items-center gap-5 sm:gap-6">
             
             {/* 1. Centered Section Title */}
-            <div className="text-center mx-auto">
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight drop-shadow-[0_6px_28px_rgba(0,0,0,0.95)]">
-                Cutting <span className="bg-gradient-to-r from-[#38bdf8] via-[#00a3ff] to-cyan-300 bg-clip-text text-transparent">Inserts</span>
+            <div className="text-center mx-auto space-y-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/90 border border-slate-200/90 text-slate-700 text-xs font-bold uppercase tracking-wider shadow-2xs backdrop-blur-md">
+                <Sparkles size={13} className="text-[#007CC2]" />
+                <span>Direct Factory Wholesale Inventory • Sector 5 Gurugram Depot</span>
+              </div>
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight leading-tight">
+                Cutting <span className="text-[#007CC2]">Inserts</span>
               </h1>
             </div>
 
             {/* 2. Horizontal Line Divider */}
-            <div className="w-full border-t border-white/20 pt-4 sm:pt-5">
+            <div className="w-full border-t border-slate-200/90 pt-4 sm:pt-5">
               <div className="flex flex-col sm:flex-row items-center sm:items-end justify-between gap-4">
                 
                 {/* Left: Popular Standards Chips Below the Line */}
                 <div className="flex flex-wrap items-center sm:items-end justify-center sm:justify-start gap-2 text-xs font-sans">
-                  <span className="text-slate-300 font-bold text-xs uppercase tracking-wider mr-1 drop-shadow-sm pb-1 sm:pb-0.5">
+                  <span className="text-slate-600 font-bold text-xs uppercase tracking-wider mr-1 pb-1 sm:pb-0.5">
                     Popular Standards:
                   </span>
                   {[
@@ -234,7 +236,7 @@ function InsertsContent() {
                       key={item.label}
                       type="button"
                       onClick={() => setSearchQuery(item.query)}
-                      className="px-3 py-1.5 rounded-xl bg-slate-900/65 hover:bg-[#007CC2] text-slate-200 hover:text-white border border-white/15 hover:border-[#007CC2] text-xs font-bold tracking-tight transition-all backdrop-blur-md shadow-xs active:scale-95"
+                      className="px-3 py-1.5 rounded-xl bg-white hover:bg-[#007CC2] text-slate-700 hover:text-white border border-slate-200/90 hover:border-[#007CC2] text-xs font-bold tracking-tight transition-all shadow-2xs active:scale-95"
                     >
                       {item.label}
                     </button>
@@ -247,7 +249,7 @@ function InsertsContent() {
                     href="https://wa.me/919350509134?text=Hi%20P.P.S%20Industrial%2C%20I%20would%20like%20to%20inquire%20about%20bulk%20cutting%20inserts%20catalog."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-11 h-11 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-lg shadow-[#25D366]/40 hover:scale-110 active:scale-95 transition-all"
+                    className="w-11 h-11 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-md shadow-[#25D366]/30 hover:scale-110 active:scale-95 transition-all"
                     title="Connect on WhatsApp"
                     aria-label="Connect on WhatsApp"
                   >
@@ -306,7 +308,7 @@ function InsertsContent() {
                     onClick={() => setSelectedCategory(cat.id)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
                       selectedCategory === cat.id
-                        ? 'bg-slate-900 text-white shadow-xs'
+                        ? 'bg-[#007CC2] text-white shadow-xs'
                         : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
                     }`}
                   >
@@ -387,7 +389,7 @@ function InsertsContent() {
                       onClick={() => setSelectedMaterial(isSelected ? 'all' : code)}
                       className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition-all border ${
                         isSelected
-                          ? 'border-slate-900 bg-slate-900 text-white shadow-xs'
+                          ? 'border-[#007CC2] bg-[#007CC2] text-white shadow-xs'
                           : 'border-slate-200 bg-white hover:border-slate-300 text-slate-700'
                       }`}
                       title={`${mat.code}: ${mat.name} (${mat.description})`}
@@ -473,41 +475,41 @@ function InsertsContent() {
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-sm border-collapse font-sans">
                     
-                    {/* Clean Spacious Table Header - Exactly Matching Actual Data Columns */}
+                    {/* Clean Spacious Table Header - Matching Lighter Gray Engineering Theme */}
                     <thead>
-                      <tr className="bg-slate-900 text-slate-100 border-b-2 border-[#007CC2] text-xs font-bold uppercase tracking-wider select-none">
+                      <tr className="bg-slate-100 text-slate-800 border-b-2 border-slate-200 text-xs font-extrabold uppercase tracking-wider select-none">
                         
                         <th className="py-4 px-6 font-bold w-[16%]">
                           <div className="flex items-center gap-2">
-                            <Disc size={15} className="text-[#38bdf8]" />
+                            <Disc size={15} className="text-[#007CC2]" />
                             <span>Order Code</span>
                           </div>
                         </th>
 
                         <th className="py-4 px-6 font-bold w-[38%]">
                           <div className="flex items-center gap-2">
-                            <SlidersHorizontal size={15} className="text-emerald-400" />
+                            <SlidersHorizontal size={15} className="text-emerald-600" />
                             <span>Descriptions</span>
                           </div>
                         </th>
 
                         <th className="py-4 px-6 font-bold w-[18%]">
                           <div className="flex items-center gap-2">
-                            <Target size={15} className="text-amber-400" />
+                            <Target size={15} className="text-amber-600" />
                             <span>Inserts (Operation)</span>
                           </div>
                         </th>
 
                         <th className="py-4 px-6 font-bold w-[16%]">
                           <div className="flex items-center gap-2">
-                            <ShieldCheck size={15} className="text-indigo-400" />
+                            <ShieldCheck size={15} className="text-indigo-600" />
                             <span>List Price / Pcs INR</span>
                           </div>
                         </th>
 
                         <th className="py-4 px-6 font-bold text-right w-[12%]">
                           <div className="flex items-center justify-end gap-2">
-                            <FileSpreadsheet size={15} className="text-[#38bdf8]" />
+                            <FileSpreadsheet size={15} className="text-[#007CC2]" />
                             <span>Inquire</span>
                           </div>
                         </th>
@@ -646,7 +648,7 @@ function InsertsContent() {
                           onClick={() => setItemsPerPage(size)}
                           className={`px-2 py-0.5 rounded text-xs font-semibold transition-colors ${
                             itemsPerPage === size
-                              ? 'bg-slate-900 text-white'
+                              ? 'bg-[#007CC2] text-white'
                               : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
                           }`}
                         >
@@ -658,7 +660,7 @@ function InsertsContent() {
                         onClick={() => setItemsPerPage(filteredInserts.length || 320)}
                         className={`px-2 py-0.5 rounded text-xs font-semibold transition-colors ${
                           itemsPerPage >= filteredInserts.length
-                            ? 'bg-slate-900 text-white'
+                            ? 'bg-[#007CC2] text-white'
                             : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
                         }`}
                       >
@@ -938,7 +940,7 @@ function InsertsContent() {
                         onClick={() => setItemsPerPage(size)}
                         className={`px-2 py-0.5 rounded text-xs font-semibold transition-colors ${
                           itemsPerPage === size
-                            ? 'bg-slate-900 text-white'
+                            ? 'bg-[#007CC2] text-white'
                             : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
                         }`}
                       >
@@ -979,7 +981,7 @@ function InsertsContent() {
         {/* 6. Technical Blueprint Slide-Over Dialog / Modal */}
         {activeInsertModal && (
           <div 
-            className="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200 font-sans"
+            className="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200 font-sans"
             onClick={() => setActiveInsertModal(null)}
           >
             <div 
