@@ -80,12 +80,12 @@ export default function HittcoSection() {
               title="Visit Hittco Tools Ltd (hittco.com)"
             >
               <Image
-                src="/hittco-logo-white.png"
-                alt="Hittco Tools Ltd Official Logo (hittco.com)"
+                src="/hittco-logo.png"
+                alt="Hittco Tools Ltd Official Logo"
                 width={300}
-                height={100}
+                height={109}
                 priority
-                className="h-10 sm:h-16 w-auto object-contain drop-shadow-[0_4px_25px_rgba(0,0,0,0.35)]"
+                className="h-12 sm:h-16 md:h-20 w-auto object-contain drop-shadow-[0_6px_28px_rgba(0,0,0,0.4)]"
               />
             </a>
           </div>
