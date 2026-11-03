@@ -100,52 +100,52 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Smart Credential Cards: Expo Awards & IndiaMART - Unified Gray Premium Look */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-5">
+        {/* Smart Credential Cards: Expo Awards & IndiaMART - Big Visible Imagery with Unified Gray Premium Look */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-5 mt-6">
           
           {/* Card 1: Expo Awards & Participation */}
           <Link
             href="/expo"
-            className="group relative overflow-hidden bg-slate-50/70 hover:bg-white rounded-2xl border border-slate-200 hover:border-slate-300 p-3.5 sm:p-4 shadow-2xs hover:shadow-xs transition-all duration-200 flex items-center justify-between gap-3 active:scale-[0.99]"
+            className="group relative overflow-hidden bg-slate-50/70 hover:bg-white rounded-2xl border border-slate-200 hover:border-slate-300 p-4 sm:p-5 shadow-2xs hover:shadow-xs transition-all duration-200 flex items-center justify-between gap-3.5 sm:gap-5 active:scale-[0.99]"
           >
-            <div className="flex items-center gap-3 min-w-0">
-              {/* Trophy Thumbnail Preview */}
-              <div className="relative w-12 h-12 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shrink-0 shadow-2xs group-hover:border-slate-300 transition-colors">
+            <div className="flex items-center gap-3.5 sm:gap-4.5 min-w-0 flex-1">
+              {/* BIG Visible Trophy Image Frame */}
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white border border-slate-200 p-2 flex items-center justify-center shrink-0 shadow-xs group-hover:border-slate-300 group-hover:scale-105 transition-all">
                 <Image
                   src="/images/expos/machauto_2026.png"
                   alt="Expo Exhibitor Award Trophy"
-                  width={48}
-                  height={48}
+                  width={96}
+                  height={96}
                   className="w-full h-full object-contain"
                 />
-                <span className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-slate-800 text-white flex items-center justify-center shadow-xs">
-                  <Trophy size={10} className="text-white" />
+                <span className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center shadow-xs">
+                  <Trophy size={11} className="text-white" />
                 </span>
               </div>
 
               {/* Minimalist Microcopy */}
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-1.5 flex-wrap">
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-slate-200/80 text-slate-800 border border-slate-300/70">
+                <div className="flex items-center gap-1.5 flex-wrap mb-1">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider bg-slate-200/80 text-slate-800 border border-slate-300/70">
                     Expo Awards
                   </span>
-                  <span className="text-[11px] font-medium text-slate-500">
+                  <span className="text-[11px] sm:text-xs font-medium text-slate-500">
                     AMTEX • MachAuto • Indus-Tech
                   </span>
                 </div>
-                <h4 className="text-sm font-extrabold text-slate-900 truncate mt-0.5 group-hover:text-black transition-colors">
+                <h4 className="text-sm sm:text-base font-extrabold text-slate-900 truncate group-hover:text-black transition-colors">
                   Exhibitor Recognition Trophies
                 </h4>
-                <p className="text-[11px] text-slate-500 line-clamp-1">
-                  Honored at India&apos;s premier machine tools exhibitions
+                <p className="text-xs text-slate-500 line-clamp-1 sm:line-clamp-2 mt-0.5">
+                  Honored for tooling excellence across India&apos;s premier machine tools expos
                 </p>
               </div>
             </div>
 
             {/* Gray Premium Action Pill */}
-            <div className="shrink-0 flex items-center gap-1 text-xs font-semibold text-slate-700 bg-white group-hover:bg-slate-900 group-hover:text-white px-2.5 py-1.5 rounded-xl border border-slate-200 group-hover:border-slate-900 transition-all">
+            <div className="shrink-0 flex items-center gap-1 text-xs sm:text-sm font-semibold text-slate-700 bg-white group-hover:bg-slate-900 group-hover:text-white px-3 py-2 rounded-xl border border-slate-200 group-hover:border-slate-900 transition-all">
               <span className="hidden xs:inline">View</span>
-              <ChevronRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
+              <ChevronRight size={15} className="group-hover:translate-x-0.5 transition-transform" />
             </div>
           </Link>
 
@@ -154,47 +154,47 @@ export default function AboutSection() {
             href="https://www.indiamart.com/pps-industrialproducts/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative overflow-hidden bg-slate-50/70 hover:bg-white rounded-2xl border border-slate-200 hover:border-slate-300 p-3.5 sm:p-4 shadow-2xs hover:shadow-xs transition-all duration-200 flex items-center justify-between gap-3 active:scale-[0.99]"
+            className="group relative overflow-hidden bg-slate-50/70 hover:bg-white rounded-2xl border border-slate-200 hover:border-slate-300 p-4 sm:p-5 shadow-2xs hover:shadow-xs transition-all duration-200 flex items-center justify-between gap-3.5 sm:gap-5 active:scale-[0.99]"
             title="Available on IndiaMART - Verified Supplier Profile"
           >
-            <div className="flex items-center gap-3 min-w-0">
-              {/* IndiaMART Logo Preview */}
-              <div className="relative w-12 h-12 rounded-xl bg-white border border-slate-200 p-1 flex items-center justify-center shrink-0 shadow-2xs group-hover:border-slate-300 transition-colors">
+            <div className="flex items-center gap-3.5 sm:gap-4.5 min-w-0 flex-1">
+              {/* BIG Visible IndiaMART Logo Frame */}
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white border border-slate-200 p-2.5 flex items-center justify-center shrink-0 shadow-xs group-hover:border-slate-300 group-hover:scale-105 transition-all">
                 <Image
                   src="/indiamart-logo.png"
                   alt="IndiaMART Official Verified Logo"
-                  width={44}
-                  height={32}
+                  width={96}
+                  height={68}
                   className="w-full h-full object-contain"
                 />
-                <span className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-slate-800 text-white flex items-center justify-center shadow-xs">
-                  <CheckCircle2 size={10} className="text-white" />
+                <span className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center shadow-xs">
+                  <CheckCircle2 size={11} className="text-white" />
                 </span>
               </div>
 
               {/* Minimalist Microcopy */}
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-1.5 flex-wrap">
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-slate-200/80 text-slate-800 border border-slate-300/70">
+                <div className="flex items-center gap-1.5 flex-wrap mb-1">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-wider bg-slate-200/80 text-slate-800 border border-slate-300/70">
                     Verified Seller
                   </span>
-                  <span className="text-[11px] font-medium text-slate-500">
+                  <span className="text-[11px] sm:text-xs font-medium text-slate-500">
                     TrustSEAL Certified
                   </span>
                 </div>
-                <h4 className="text-sm font-extrabold text-slate-900 truncate mt-0.5 group-hover:text-black transition-colors">
+                <h4 className="text-sm sm:text-base font-extrabold text-slate-900 truncate group-hover:text-black transition-colors">
                   Available on IndiaMART
                 </h4>
-                <p className="text-[11px] text-slate-500 line-clamp-1">
-                  Explore 5,000+ cutting tools &amp; instant wholesale quotes
+                <p className="text-xs text-slate-500 line-clamp-1 sm:line-clamp-2 mt-0.5">
+                  Explore 5,000+ cutting tools &amp; instant direct wholesale quotes
                 </p>
               </div>
             </div>
 
             {/* Gray Premium Action Pill */}
-            <div className="shrink-0 flex items-center gap-1 text-xs font-semibold text-slate-700 bg-white group-hover:bg-slate-900 group-hover:text-white px-2.5 py-1.5 rounded-xl border border-slate-200 group-hover:border-slate-900 transition-all">
+            <div className="shrink-0 flex items-center gap-1 text-xs sm:text-sm font-semibold text-slate-700 bg-white group-hover:bg-slate-900 group-hover:text-white px-3 py-2 rounded-xl border border-slate-200 group-hover:border-slate-900 transition-all">
               <span className="hidden xs:inline">Store</span>
-              <ExternalLink size={13} />
+              <ExternalLink size={14} />
             </div>
           </a>
 
