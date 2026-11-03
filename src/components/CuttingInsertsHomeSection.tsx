@@ -1,11 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  ArrowRight,
-  TableProperties,
-  FileSpreadsheet
-} from 'lucide-react';
 import { CUTTING_INSERTS, ISO_MATERIALS_MAP } from '@/data/insertsData';
 
 // Showcase authentic Lexustec insert photography across major CNC operations
@@ -38,7 +33,7 @@ export default function CuttingInsertsHomeSection() {
         </div>
 
         {/* 2. Featured Inserts Showcase (Real Photos from Lexustec / PPS) */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {featuredInserts.map((insert) => (
             <Link
               key={insert.id}
@@ -102,70 +97,6 @@ export default function CuttingInsertsHomeSection() {
               </div>
             </Link>
           ))}
-        </div>
-
-        {/* 3. High-Converting VIEW MORE Callout Banner -> Navigates to /inserts Table */}
-        <div className="rounded-3xl bg-gradient-to-r from-slate-950 via-[#061e33] to-slate-950 p-6 sm:p-10 text-white shadow-xl border border-slate-800 relative overflow-hidden">
-          {/* Subtle Glows */}
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#007CC2]/20 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-10 w-64 h-64 bg-cyan-400/10 rounded-full blur-2xl pointer-events-none" />
-
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
-            <div className="space-y-3 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/20 text-[#38bdf8] text-xs font-bold uppercase tracking-wider backdrop-blur-xs">
-                <FileSpreadsheet size={14} className="text-[#38bdf8]" />
-                <span>Full Technical Specifications &amp; ISO Database</span>
-              </div>
-
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                Looking for the Complete <span className="text-[#38bdf8]">Cutting Inserts Table</span>?
-              </h3>
-
-              <p className="text-xs sm:text-sm md:text-base text-slate-300 leading-relaxed font-normal">
-                Compare comprehensive speeds &amp; feeds, chipbreakers, dimensional tolerances, and ISO workpiece suitability in our interactive technical catalog. Fully optimized for desktop data comparison and mobile field reference.
-              </p>
-
-              {/* Quick Jump Category Chips */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1 text-xs">
-                <Link
-                  href="/inserts?category=turning"
-                  className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white border border-white/10 transition-colors flex items-center gap-1 font-semibold"
-                >
-                  <span>Turning (CNMG / WNMG / TNMG)</span>
-                </Link>
-                <Link
-                  href="/inserts?category=milling"
-                  className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white border border-white/10 transition-colors flex items-center gap-1 font-semibold"
-                >
-                  <span>Milling (APMT / ONMU)</span>
-                </Link>
-                <Link
-                  href="/inserts?category=grooving"
-                  className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white border border-white/10 transition-colors flex items-center gap-1 font-semibold"
-                >
-                  <span>Grooving (MGMN)</span>
-                </Link>
-                <Link
-                  href="/inserts?category=threading"
-                  className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 hover:text-white border border-white/10 transition-colors flex items-center gap-1 font-semibold"
-                >
-                  <span>Threading (16ER)</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* View More Primary Button */}
-            <div className="shrink-0 flex flex-col sm:flex-row items-center gap-4">
-              <Link
-                href="/inserts"
-                className="px-7 py-4 rounded-2xl bg-[#007CC2] hover:bg-[#0091e6] text-white font-black text-sm sm:text-base flex items-center gap-3 shadow-lg shadow-[#007CC2]/40 hover:shadow-cyan-500/50 hover:scale-105 active:scale-95 transition-all duration-300 group"
-              >
-                <TableProperties size={20} className="group-hover:rotate-6 transition-transform" />
-                <span>View Full Inserts Table</span>
-                <ArrowRight size={18} className="group-hover:translate-x-1.5 transition-transform" />
-              </Link>
-            </div>
-          </div>
         </div>
 
       </div>

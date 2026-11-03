@@ -118,6 +118,13 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/dealership" className="text-emerald-400 hover:text-white transition-colors flex items-center gap-1.5 font-bold">
+                    <ChevronRight size={13} className="text-emerald-400" />
+                    <span>Authorized Dealership Network</span>
+                    <span className="px-1.5 py-0.2 rounded bg-emerald-600 text-[9px] font-black uppercase text-white">OFFICIAL</span>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/expo" className="text-amber-400 hover:text-white transition-colors flex items-center gap-1.5 font-bold">
                     <ChevronRight size={13} className="text-amber-400" />
                     <span>Manufacturing Expos &amp; Trade Shows</span>
@@ -215,6 +222,11 @@ export default function Footer() {
                   <Link href="#blades" className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5">
                     <ChevronRight size={13} className="text-slate-600" />
                     <span>Jaldhara Tools</span>
+                  </Link>
+                </li>
+                <li className="pt-1">
+                  <Link href="/dealership" className="text-[#38bdf8] hover:underline font-bold transition-colors flex items-center gap-1">
+                    <span>View All 7 Dealerships →</span>
                   </Link>
                 </li>
               </ul>

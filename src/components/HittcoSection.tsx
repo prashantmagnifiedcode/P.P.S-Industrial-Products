@@ -41,33 +41,6 @@ const HITTCO_PRODUCTS: HittcoProduct[] = [
     spec: 'DIN 212 / 8093',
     image: '/hittco/carbide-reamer.jpg',
     whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Hittco Solid Carbide Machine Reamers.'
-  },
-  {
-    id: 'HITTCO-JOBBER-DRILL',
-    name: 'HSS-Co M35 5% Cobalt Heavy-Duty Jobber Drills',
-    category: 'HSS Drills',
-    badge: 'HSS-Co M35',
-    spec: 'DIN 338 135° Split',
-    image: '/hittco/jobber-drill.png',
-    whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Hittco HSS-Co M35 Jobber Drills.'
-  },
-  {
-    id: 'HITTCO-CENTER-DRILL',
-    name: 'HSS 60° Precision Center & Starter Drills (BS Series)',
-    category: 'Center Drills',
-    badge: '60° Form A',
-    spec: 'BS 328 / DIN 333',
-    image: '/hittco/center-drill.png',
-    whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Hittco HSS 60° Center Drills.'
-  },
-  {
-    id: 'HITTCO-TOOL-BIT',
-    name: 'HSS M42 8% Cobalt Ground Lathe Tool Bits',
-    category: 'Tool Bits',
-    badge: 'HSS M42 8% Co',
-    spec: '67–69 HRC Ground',
-    image: '/hittco/tool-bit.png',
-    whatsappMessage: 'Hi P.P.S Industrial, please share quotation for Hittco HSS M42 Cobalt Tool Bits.'
   }
 ];
 
@@ -176,7 +149,7 @@ export default function HittcoSection() {
       {/* Overlapping Hittco Product Cards: Styled matching Carbide & Ceramic Cutting Inserts */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 sm:-mt-20 lg:-mt-24 relative z-20">
         
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {HITTCO_PRODUCTS.map((prod) => (
             <a
               key={prod.id}
