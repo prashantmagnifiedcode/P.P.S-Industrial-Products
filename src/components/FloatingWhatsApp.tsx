@@ -35,19 +35,19 @@ export default function FloatingWhatsApp({
         rel="noopener noreferrer"
         aria-label="Chat with P.P.S Industrial Products on WhatsApp (+91 9350509134)"
         title="Chat with us on WhatsApp (+91 9350509134)"
-        className="relative flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white shadow-[0_8px_25px_rgba(37,211,102,0.45)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.65)] hover:scale-110 active:scale-95 transition-all duration-300 ease-out focus:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/50"
+        className="relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white shadow-[0_8px_25px_rgba(37,211,102,0.45)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.65)] hover:scale-110 active:scale-95 transition-all duration-300 ease-out focus:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/50"
       >
         {/* Radar ping ripple animation */}
         <span className="absolute -inset-1 rounded-full bg-[#25D366] opacity-35 animate-ping pointer-events-none" />
 
         {/* Online Status Dot */}
-        <span className="absolute top-0.5 right-0.5 w-3.5 h-3.5 bg-white rounded-full flex items-center justify-center shadow-xs">
+        <span className="absolute top-0.5 right-0.5 w-3.5 h-3.5 bg-white rounded-full flex items-center justify-center shadow-sm">
           <span className="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse" />
         </span>
 
         {/* WhatsApp Official SVG Icon */}
         <svg
-          className="w-7 h-7 fill-current drop-shadow-xs transition-transform duration-300 group-hover:scale-105"
+          className="w-7 h-7 fill-current drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
