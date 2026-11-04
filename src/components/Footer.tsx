@@ -40,22 +40,22 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 w-full lg:w-auto shrink-0">
               <a
                 href="tel:+919350509134"
-                className="px-5 py-3 rounded-2xl bg-white text-[#007CC2] hover:bg-slate-100 font-extrabold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all active:scale-95"
+                className="w-full sm:w-auto px-5 py-3.5 sm:py-3 rounded-2xl bg-white text-[#007CC2] hover:bg-slate-100 font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 text-center"
               >
-                <Phone size={15} />
+                <Phone size={15} className="shrink-0" />
                 <span>Call Hotline: +91 93505 09134</span>
               </a>
 
               <button
                 type="button"
                 onClick={() => openRfqModal()}
-                className="px-5 py-3 rounded-2xl bg-[#005688] hover:bg-[#00436a] border border-white/25 text-white font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all active:scale-95"
+                className="w-full sm:w-auto px-5 py-3.5 sm:py-3 rounded-2xl bg-[#005688] hover:bg-[#00436a] border border-white/25 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 text-center"
               >
                 <span>Instant RFQ Dispatch</span>
-                <ArrowUpRight size={15} />
+                <ArrowUpRight size={15} className="shrink-0" />
               </button>
             </div>
           </div>
