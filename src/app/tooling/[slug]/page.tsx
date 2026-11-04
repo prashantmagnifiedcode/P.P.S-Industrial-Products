@@ -506,43 +506,6 @@ export default function ToolingDetailPage() {
               })}
             </div>
           </div>
-
-          {/* B2B Engineering Helpline & Custom Orders Banner */}
-          <div className="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950 p-6 sm:p-8 text-white border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2 text-center md:text-left">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-cyan-300 text-xs font-bold uppercase tracking-wider">
-                <Sparkles size={12} />
-                <span>Specialized B2B Tooling Assistance</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-black tracking-tight">
-                Need Non-Standard Diameters or Annual Contract Supply?
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-                Our Gurugram technical team provides tool life benchmarking, feed rate optimization, and scheduled bulk deliveries for automotive and general manufacturing machine shops Pan India.
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full md:w-auto">
-              <a
-                href="https://wa.me/919350509134?text=Hi%20P.P.S%20Industrial%2C%20I%20need%20technical%20assistance%20for%20tooling."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-5 py-3 rounded-2xl bg-white hover:bg-slate-100 text-slate-950 font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-md"
-              >
-                <span>💬 WhatsApp Support</span>
-              </a>
-
-              <button
-                type="button"
-                onClick={() => openRfqModal()}
-                className="w-full sm:w-auto px-5 py-3 rounded-2xl bg-[#007CC2] hover:bg-[#006aa6] text-white font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-md shadow-[#007CC2]/30"
-              >
-                <Send size={13} />
-                <span>Submit RFQ Inquiries</span>
-              </button>
-            </div>
-          </div>
-
         </div>
 
         {/* Global Footer */}
