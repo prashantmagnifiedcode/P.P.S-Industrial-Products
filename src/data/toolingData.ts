@@ -64,7 +64,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Number of Edges', value: '6 Edges' }
         ],
         stock: '1,200+ Pcs in Stock (Sector 5 Gurugram)',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/tnmg-turning.jpg',
         highlight: 'Best Seller for CNC Lathes'
       },
@@ -83,7 +83,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Number of Edges', value: '4 Edges' }
         ],
         stock: '950+ Pcs in Stock (Ready for Dispatch)',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/cnmg-turning.png',
         highlight: 'Maximum Rigidity'
       },
@@ -102,7 +102,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Number of Edges', value: '6 Edges' }
         ],
         stock: '800+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/wnmg-trigon.webp',
         highlight: 'Cost-Effective Trigon'
       },
@@ -121,7 +121,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Number of Edges', value: '6 Edges' }
         ],
         stock: '650+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/tnmg-turning.jpg'
       }
     ]
@@ -158,7 +158,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Tolerance Class', value: 'M (Precision Ground)' }
         ],
         stock: '750+ Pcs in Stock (Sector 5 Gurugram)',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/cnmg-turning.png',
         highlight: 'Popular for Shaft Profiling'
       },
@@ -176,7 +176,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Included Angle', value: '55° Diamond' }
         ],
         stock: '600+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/cnmg-turning.png'
       },
       {
@@ -194,7 +194,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Accessibility', value: 'Deep Undercut Clearance' }
         ],
         stock: '480+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/cnmg-turning.png',
         highlight: 'Maximum Geometric Clearance'
       }
@@ -307,7 +307,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Number of Edges', value: '2 Reversible Edges' }
         ],
         stock: '1,400+ Pcs in Stock (Sector 5 Gurugram)',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/mgmn-grooving.png',
         highlight: 'Top Industrial Consumable'
       },
@@ -325,7 +325,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Scrap Reduction', value: '33% Savings vs 3mm' }
         ],
         stock: '850+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/mgmn-grooving.png'
       },
       {
@@ -379,7 +379,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Rake Geometry', value: 'High Positive Axial Rake' }
         ],
         stock: '2,200+ Pcs in Stock (Sector 5 Gurugram)',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/apmt-milling.png',
         highlight: 'VMC Industry Standard'
       },
@@ -397,7 +397,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Max Depth of Cut', value: '12.0 mm per pass' }
         ],
         stock: '1,500+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/apmt-milling.png',
         highlight: 'Heavy Depth of Cut'
       },
@@ -490,7 +490,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Surface Roughness', value: 'Ra < 0.2 µm Mirror Grade' }
         ],
         stock: '210+ Units in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/lexustec-endmills-studio.jpg'
       }
     ]
@@ -545,7 +545,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Cutting Edges', value: '4 Indexable Positions' }
         ],
         stock: '900+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/inserts-hero-bg.jpg'
       },
       {
@@ -617,7 +617,7 @@ export const TOOLING_CATEGORIES: Record<string, ToolingCategoryData> = {
           { label: 'Depth of Cut', value: 'Up to 5.0 mm' }
         ],
         stock: '800+ Pcs in Stock',
-        brand: 'LexusTec Germany Standard',
+        brand: 'LexusTech',
         image: '/lexustec/onmu-octagonal.jpg',
         highlight: '16 Usable Cutting Edges'
       }
